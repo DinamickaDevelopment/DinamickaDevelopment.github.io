@@ -498,16 +498,16 @@ span.bold-span{
     ---------------------------MIKSHER-------------------------
 */
 span.ui-slider-handle {
-            background-image: url('../img/range.png') !important;
-            border: none !important;
-            border-radius: 0 !important;
-            width: 26px !important;
-            height: 26px !important;
-            left: -9px !important;
-            -webkit-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
-            -moz-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
-            box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
-        }
+    background-image: url('img/range.png') !important;
+    border: none !important;
+    border-radius: 0 !important;
+    width: 26px !important;
+    height: 26px !important;
+    left: -9px !important;
+    -webkit-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+    box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+}
 
         .ui-widget-content {
             border-radius: 0 !important;
