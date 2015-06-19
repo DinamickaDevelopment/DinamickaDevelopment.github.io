@@ -36,7 +36,7 @@ function start() {
         var closeIcon = document.createElement("div");
         closeIcon.className = "closeIcon";
         if (elem.className !== "closeIcon") {
-            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content") {
+            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content" && elem.className !== "circle-head") {
                 if (elem.querySelector("#active-circle .closeIcon") == null) {
                     elem.id = "active-circle";
                     
