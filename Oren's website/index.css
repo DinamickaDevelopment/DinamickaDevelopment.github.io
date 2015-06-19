@@ -1015,17 +1015,17 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 }
 
 .brackets_1 {
-    background:url(Images/1.png) no-repeat; 
+    background:url(images/1.png) no-repeat; 
 
 }
 
 .brackets_2 {
-background:url(Images/2.png) no-repeat; 
+background:url(images/2.png) no-repeat; 
 top:140px;
 }
 
 .brackets_3 {
-    background:url(Images/3.png) no-repeat; 
+    background:url(images/3.png) no-repeat; 
     top:245px;
 }
 
