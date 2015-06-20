@@ -478,10 +478,13 @@ div.figures img{
     border-bottom: 1px solid #fff;
 }
 #case h3{  margin: 80px auto 40px;}
+.three-icon-image{
+
+}
+.three-icon-line{
+}
 .brain{
     left: 610px;
-}
-.icon3 div{
 }
 .how-graphics{
       display: block;
@@ -491,14 +494,6 @@ div.figures img{
 .how-graphics div{
     float:left;
     position:absolute;
-}
-.three-icon-image{
-      width: 150px;
-  height: 150px;
-  background-color: #fff;
-  position: relative;
-}
-.three-icon-line{
 }
 .text-box{
   width: 330px;
