@@ -308,7 +308,7 @@ var Application = function(){
 	};
 	
 	Resize.references = function(){
-		var ratio = 0.61384615384615;
+		var ratio = 0.6702721234197515;
 		var width = $('#tRefCol1').width();
 		var height = Math.round(width * ratio);
 		
@@ -333,7 +333,7 @@ var Application = function(){
 				
 				image.css({
 					width : crop.width,
-					height : crop.height,
+					height : 32,
 					top : crop.top,
 					left : crop.left
 				});
@@ -392,4 +392,37 @@ var Application = function(){
 
 var app = new Application();
 
+$(function () {
 
+    allButtons = $(".SliderButtons div");
+
+    allButtons.click(function (event) {
+
+        allButtons.removeClass("white")
+
+        $(this).toggleClass("white");
+        event.stopPropagation();
+
+
+        if ($(this).hasClass('firstSliderButton'))
+
+        {
+            $(".slider_text").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit commodo vehicula. Etiam hendrerit augue rhoncus pulvinar");
+        }
+        else if ($(this).hasClass('secondSliderButton'))
+
+        {
+            $(".slider_text").text("Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar");
+        }
+
+        else if ($(this).hasClass('thirdSliderButton'))
+
+        {
+          
+            $(".slider_text").text("Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar");
+        
+        }
+
+    });
+
+});
