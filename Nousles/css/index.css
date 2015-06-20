@@ -1,13 +1,3 @@
-a{body{
-	margin:0px;
-	background:#FFF;
-}
-
-.col-lg-12 
-{
-    padding:0px;
-
-}
 a img{
 	border:none;
 }
@@ -935,73 +925,11 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     
 }
 
-
 .ref-title h3{
 	font-size:40px;
 	margin:0px;
 
 }
-
-.ref-index.open .SliderButtons {
-
-    position:absolute;
-    z-index:7;
-
-    bottom:0;
-    width: 80px;
-    height:16px;
-
-    left:32px;
-    bottom:80px;
-
-}
-
-.ref-index.open .SliderButtons div
-{
-    
-    width:12px;
-    height:12px;
-    float:left;
-    margin-right:10px;
-
-    border:1px solid transparent;
-    border-radius: 8px;
-    background: rgba(172, 197, 196,0.5);
-
-}
-
-
-.white 
-{
-    background-color:white !important;
-}
-
-    /*.ref-index.open .SliderButtons div:hover {
-        background: white;
-        -moz-transition: background-color ease-out 0.5s;
-        -o-transition: background-color ease-out 0.5s;
-        -webkit-transition: background-color ease-out 0.5s;
-        transition: background-color ease-out 0.5s;
-    }*/
-
-
-.ref-index.open .SliderLinks 
-{
-    position:absolute;
-    z-index:8;
-
-   
-    width: 230px;
-    height:30px;
-
-    left:32px;
-    bottom:28px;
-
-    font-size: 14px;
-    font-family: 'Alef', sans-serif;
-    color: white;
-}
-
 
 
 #tRefCol1 .ref-index.visible .ref-title{
@@ -1130,18 +1058,11 @@ top:140px;
 }
 
 #tRefCol2 .ref-close{
-    
-    background: rgba(43,34,34,0.4);
 
 	cursor:pointer;
     display:block;
     position:absolute;
     z-index:3;
-
-}
-
-#tRefCol2 .ref-close{
-    
     top:36px;
     right:26px;
 }
@@ -1180,28 +1101,9 @@ top:140px;
 	
     width:740px !important;
     
-    
 }
 
 .ref-fleche-gauche, .ref-fleche-droite{
-
-    width:88px;
-    height:88px;
-    
-    color:white;
-
-    font-weight:inherit;
-    font-style:normal;
-    font-size:43px;
-    
-    text-align: center;
-    line-height: 1.9;
-
-    border:1px solid transparent;
-    border-radius:44px;
-    
-    background: rgba(43,34,34,0.4);
-
 	position:absolute;
 	top:50%;
 	margin-top:-15px;

@@ -7,14 +7,47 @@
 // 1.Scrolling Parallax
 // Using jquery.scrolling-parallax.js
 
-$.scrollingParallax('img/body-dg.png', {
-    enableHorizontal: true,
-    bgWidth: 'auto',
-    staticSpeed: 0.03,
-});
+//$.scrollingParallax('img/body-dg.png', {
+//    enableHorizontal: true,
+//    bgWidth: '150%',
+//    staticSpeed: 0.03,
+//});
 
 
+//$(document).ready(function () {
+//    $('body[data-type="background"]').each(function () {
+//        var $bgobj = $(this); // создаем объект
+//        $(window).scroll(function () {
+//            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
+//            // Присваиваем значение background-position
+//            var coords = 'center ' + yPos + 'px';
+//            // Создаем эффект Parallax Scrolling
+//            $bgobj.css({ backgroundPosition: coords });
+//        });
+//    });
+//});
+function opacity1() {
+    var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
+    if (elem.style.display == "none") {
+        elem.style.display = "block";
+    } else { elem.style.display = "none"; }
 
+}
+function opacity2() {
+    var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
+    if (elem.style.display == "none") {
+        elem.style.display = "block";
+    } else { elem.style.display = "none"; }
+
+}
+function opacity3() {
+    var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
+    if (elem.style.display == "none") {
+        elem.style.display = "block";
+    } else { elem.style.display = "none"; }
+
+
+}
 
 //2.Service logic
 
@@ -30,6 +63,11 @@ function start() {
     document.getElementById("cicle-group-info").addEventListener("click", CircleExpand, true);
     //Expande\Compression checkbox list
     document.getElementById("checkboxClick").addEventListener("click", checkboxExpand, false);
+    //
+
+
+
+
     var flag = false;
     function CircleExpand(e) {
         var elem = e.target;
@@ -137,6 +175,28 @@ function start() {
         }
         
     };
+            function opacity1() {
+            var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
+            if (elem.style.display == "none") {
+                elem.style.display = "block";
+            } else { elem.style.display = "none"; }
+            
+        }
+        function opacity2() {
+            var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
+            if (elem.style.display == "none") {
+                elem.style.display = "block";
+            } else { elem.style.display = "none"; }
+
+        }
+        function opacity3() {
+            var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
+            if (elem.style.display == "none") {
+                elem.style.display = "block";
+            } else { elem.style.display = "none"; }
+
+
+        }
 
 };
 
