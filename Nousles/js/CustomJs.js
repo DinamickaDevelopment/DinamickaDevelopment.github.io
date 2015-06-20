@@ -7,25 +7,12 @@
 // 1.Scrolling Parallax
 // Using jquery.scrolling-parallax.js
 
-//$.scrollingParallax('img/body-dg.png', {
-//    enableHorizontal: true,
-//    bgWidth: '150%',
-//    staticSpeed: 0.03,
-//});
-
-
-//$(document).ready(function () {
-//    $('body[data-type="background"]').each(function () {
-//        var $bgobj = $(this); // создаем объект
-//        $(window).scroll(function () {
-//            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
-//            // Присваиваем значение background-position
-//            var coords = 'center ' + yPos + 'px';
-//            // Создаем эффект Parallax Scrolling
-//            $bgobj.css({ backgroundPosition: coords });
-//        });
-//    });
-//});
+$.scrollingParallax('img/body-dg.png', {
+    enableHorizontal: true,
+    bgWidth: '150%',
+    staticSpeed: 0.03,
+});
+///////-------------------------------------------------------------------
 function opacity1() {
     var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
     if (elem.style.display == "none") {
