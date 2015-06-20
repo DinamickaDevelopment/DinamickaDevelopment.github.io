@@ -38,8 +38,8 @@ a img{
 	background-repeat:no-repeat;
 	background-size:cover;
 	position:absolute;
-	top:0px;
-	left:0px;
+	top:0;
+	left:0;
 	z-index:10;
 }
 
@@ -257,7 +257,7 @@ body:not(.ipad) #nav.open .nav-menu-item:nth-child(5){
 	position:relative;
 	-webkit-transition:width 0.4s linear;
 	-moz-transition:width 0.4s linear;
-	-ms-transition:width 0.4s linear;
+
 	-o-transition:width 0.4s linear;
 	transition:width 0.4s linear;
 	overflow:hidden;
