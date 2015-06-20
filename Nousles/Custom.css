@@ -9,8 +9,7 @@
 */
 
 
-body {background-image: url('img/body-dg.png') ;
-      background-position-y:100px;
+body {
 }
  /*
      -----------------------------1.Header-----------------------------
@@ -32,25 +31,6 @@ body {background-image: url('img/body-dg.png') ;
  li a:hover{
      font-weight:bold;
  }
-a#scroll:active:before{   content: "";
-  width: 13px;
-  height: 3px;
-  color: #fff;
-  position: absolute;
-  background-color: #fff;
-  top: 23px;
-  left: 7px;
-}
-a#scroll:active:after{
-    content: "";
-  width: 89%;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  left: 7px;
-  top: 24px;
-}
-
  li{
      font-family:Alef;
      font-size:20px;
@@ -115,18 +95,6 @@ a#scroll:active:after{
     width:45px;
     margin:0px auto 15px;
 
-}
-.assets{
-      border-top: 1px solid #fff;
-  width: 44px;
-  padding-top: 6px;
-  position: absolute;
-  top: -26px;
-  left: 168px;
-  transition: padding-top 1s;
-}
-.assets:hover{
-    padding-top:20px;
 }
 div h2{
     width: auto;
@@ -196,67 +164,6 @@ div.span+p{
     margin-top:15px;
     word-spacing:2px;
 }
- .RXD-info{
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 100%;
-  border: 1px solid #000;} 
-  .RXD-info span{
-        display: block;
-  width: 100%;
-  font-family: Alef;
-  font-size: 14px;
-  text-align: center;
-  color: #000;
-  margin-top: 15px;
-  }
- .RXD-info p{
-       width: 60%;
-  margin: 0px auto;
-  font-family: Alef;
-  font-weight: bold;
-  font-size: 17px;
-  text-align: center;
-  color: #000;
-  letter-spacing: 0px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #000;
-  line-height: 18px;
- }
-  .RXD-info p:before{
-  content:"";
-  position: absolute;
-  width: 14px;
-  height: 4px;
-  background-color: #000;
-  top: 90px;
-  left: 42px;
-  }
-
-  .RXD-info-corner{
-  position: absolute;
-  border: 1px solid #fff;
-  padding: 2px;
-  border-radius: 100%;
-  top: 10px;
-  left: 19px;
-  z-index: 1;
-  display:none;
-
-
-  }
-  .RXD-info-head{  font-family: Alef;
-  font-weight: bold;
-  font-size: 38px;
-  text-align: center;
-  width: 60px;
-  height: 60px;
-  border: 3px solid #000;
-  border-radius: 100%;
-  background-color: #52b2cf;
-  line-height: 55px;}
-
 .circle{
     position:absolute;
     width:25px;
@@ -287,8 +194,6 @@ div.span+p{
     font-weight:900;
     transition: background-color 1s;
     cursor:pointer;
-     -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
 }
 .circle .plus:hover{
     background-color:#52b2cf;
@@ -315,8 +220,6 @@ div.span+p{
     height:13px;
     box-shadow: 0px 2px 4px 1px #000000 inset;
     background-color:#111014;
-    -webkit-box-shadow:0px 2px 4px 1px #000000 inset;
-    -moz-box-shadow:0px 2px 4px 1px #000000 inset;
 }
 .pointer{
     width:21px;
@@ -399,23 +302,17 @@ div.figures img{
 .non-active{
     background-color:#232129;
     box-shadow:0px 0px 4px 2px #000 inset;
-    -webkit-box-shadow:0px 0px 4px 2px #000 inset;
-    -moz-box-shadow:0px 0px 4px 2px #000 inset;
-
+    
 }
 .active-p{
     background-color:#d6b83c;
     box-shadow:0px 0px 4px 2px #000 inset;
     margin: 0px auto;
-        -webkit-box-shadow:0px 0px 4px 2px #000 inset;
-    -moz-box-shadow:0px 0px 4px 2px #000 inset;
 }
 .active-p-red{
     background-color:#f35151;
     box-shadow:0px 0px 4px 2px #000 inset;
     margin: 0px auto;
-        -webkit-box-shadow:0px 0px 4px 2px #000 inset;
-    -moz-box-shadow:0px 0px 4px 2px #000 inset;
 }
 .Ep{
   position: relative;
@@ -448,16 +345,7 @@ div.figures img{
   border: 1px solid #000;
   box-shadow: 0px 0px 4px 1px #000 inset;
   margin: 0px 10px;
-      -webkit-box-shadow:0px 0px 4px 1px #000 inset;
-    -moz-box-shadow:0px 0px 4px 1px #000 inset;
 
-}
-.btn-num:hover{
-      background-color: #696a6a;
-  color: #000;
-  box-shadow: 0px 3px 9px 2px #000 inset;
-        -webkit-box-shadow:0px 3px 9px 2px #000 inset;
-    -moz-box-shadow:0px 3px 9px 2px #000 inset;
 }
 /*
     -----------------------------3. How-----------------------------
@@ -521,8 +409,6 @@ top: 1240px;
     text-align:left;
     color:#fff;
 }
-
-
 .big-man{
       z-index: -1;
   left: 178px;
@@ -746,7 +632,7 @@ span.ui-slider-handle {
 }
 .hexa-group+hr{
     border:1px solid rgba(255,255,255,0.1);
-    width: 100%;
+    width:1200px;
 }
 .all-serv{
     width:160px;
@@ -782,8 +668,6 @@ span.ui-slider-handle {
   transition:width 1s,height 1s;
   position:relative;
   z-index:1;
-  -webkit-transition:width 1s,height 1s;
-  -moz-transition:width 1s,height 1s;
 }
 #active-circle{
   width: 300px;
@@ -815,8 +699,7 @@ span.ui-slider-handle {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   z-index:3;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
+
 }
  .closeIcon:before{
      content:"\f00d"
@@ -1006,8 +889,6 @@ input.button {
   position: absolute;
   margin-left: 99px;
   transition: height 1s;
-    -webkit-transition: height 1s;
-  -moz-transition: height 1s;
 }
 .checkbox-holder input{
     display:block;
@@ -1089,8 +970,6 @@ input[type=checkbox]:checked + label:before {
   top: 10px;
   left: 22px;
   color: #f45151;
-      -webkit-transition:  opacity 1s;
-  -moz-transition: opacity 1s;
 }.input-group{
      border: 2px solid transparent;
 }
