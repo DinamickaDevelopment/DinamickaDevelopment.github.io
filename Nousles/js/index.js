@@ -15,8 +15,22 @@ var Application = function(){
 		$('#content').css('display', 'block');
 		$(window).trigger('resize');
 		$(document).scrollTop(0);
-		
+		//$('#playBtn').get(0).click();
+		//generateMap();
 		$('.ref-index:first').get(0).click();
+		/*
+		var hash = document.location.hash;
+		if(hash.length > 0){
+			if($(hash).length>0){
+				$(document).scrollTop($(hash).offset().top);
+				if(hash.match(/^#reference([0-9]+)$/) != null){
+					setTimeout(function(hash){
+						$(hash).click();
+					}, 500, hash);
+				}
+			}
+		}
+		*/
 	};		
 	
 	Init.delphineEtSaig = function(){

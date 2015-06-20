@@ -1,13 +1,19 @@
-a{body{
+body{
 	margin:0px;
 	background:#FFF;
 }
 
 .col-lg-12 
 {
-    padding:0;
+    padding:0px;
 
 }
+
+a{
+	text-decoration:none;
+	color: inherit;
+}
+
 a img{
 	border:none;
 }
@@ -38,8 +44,8 @@ a img{
 	background-repeat:no-repeat;
 	background-size:cover;
 	position:absolute;
-	top:0;
-	left:0;
+	top:0px;
+	left:0px;
 	z-index:10;
 }
 
@@ -257,7 +263,7 @@ body:not(.ipad) #nav.open .nav-menu-item:nth-child(5){
 	position:relative;
 	-webkit-transition:width 0.4s linear;
 	-moz-transition:width 0.4s linear;
-
+	-ms-transition:width 0.4s linear;
 	-o-transition:width 0.4s linear;
 	transition:width 0.4s linear;
 	overflow:hidden;
@@ -1084,12 +1090,12 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 .brackets_2 {
     background: url(../img/sprite_pic.png) no-repeat 0 -73px;
-top:140px;
+    top:140px;
 }
 
 .brackets_3 {
       background: url(../img/sprite_pic.png) no-repeat 0 -149px;
-    top:245px;
+      top:245px;
 }
 
 .brackets div:first-child {
@@ -1146,7 +1152,7 @@ top:140px;
     
     background: rgba(43,34,34,0.4);
 
-	cursor:pointer;
+    cursor:pointer;
     display:block;
     position:absolute;
     z-index:3;
