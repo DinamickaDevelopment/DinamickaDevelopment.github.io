@@ -7,14 +7,25 @@
 // 1.Scrolling Parallax
 // Using jquery.scrolling-parallax.js
 
-//$.scrollingParallax('img/body-dg.png', {
-//    enableHorizontal: true,
-//    bgWidth: 'auto',
-//    staticSpeed: 0.03,
+$.scrollingParallax('img/body-dg.png', {
+    enableHorizontal: true,
+    bgWidth: '150%',
+    staticSpeed: 0.03,
+});
+
+
+//$(document).ready(function () {
+//    $('body[data-type="background"]').each(function () {
+//        var $bgobj = $(this); // создаем объект
+//        $(window).scroll(function () {
+//            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
+//            // Присваиваем значение background-position
+//            var coords = 'center ' + yPos + 'px';
+//            // Создаем эффект Parallax Scrolling
+//            $bgobj.css({ backgroundPosition: coords });
+//        });
+//    });
 //});
-
-
-
 
 //2.Service logic
 

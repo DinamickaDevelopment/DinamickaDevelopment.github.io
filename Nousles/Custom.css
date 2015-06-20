@@ -9,10 +9,8 @@
 */
 
 
-body {background-color:#000;
-}
-.bg {
-    background-image: url('img/body-dg.png');
+body {background-image: url('img/body-dg.png') ;
+      background-position-y:100px;
 }
  /*
      -----------------------------1.Header-----------------------------
