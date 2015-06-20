@@ -1,5 +1,6 @@
 body{
 	margin:0px;
+	background:#FFF;
 }
 
 .col-lg-12 
@@ -812,6 +813,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 .ref-index>img{
 	position:absolute;
+    height:inherit !important;
 }
 
 .ref-resources.open, .ref-infos.open{
@@ -821,6 +823,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 .ref-index.open, .ref-infos.open
 {
     width:400px;
+   
 }
 
 #tRefCol2 .ref-infos.open
@@ -836,13 +839,13 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 #tRefCol2 .ref-resources.open 
 {
-    width:740px;
-    left: -170px;
+    width:770px;
+    left: -185px;
 }
 
 #tRefCol1 .ref-resources.open 
 {
-    width:740px;
+    width:770px;
     left: 0;
 }
 
@@ -853,8 +856,8 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     z-index: 1;
     
     
-    width: 585px;
-    height: 359px;
+    width: inherit;
+    height: inherit;
 
     opacity: 0.9;
     -moz-transition: opacity .5s ease-out;
@@ -872,22 +875,22 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 .blur_ref-index_0 
 {
-    background-color: rgb(116,198,198);
+    background: linear-gradient(to left ,#386663, #74c6c6); 
 }
 
 .blur_ref-index_1 
 {
-     background-color: rgb(86,48,59);
+     background: linear-gradient(to left ,#9d6173, #4f2734);  
 }
 
 .blur_ref-index_2 
 {
-     background-color: rgb(194,151,143);
+     background: linear-gradient(to left ,#696344, #be8e85);  
 }
 
 .blur_ref-index_3 
 {
-     background-color: rgb(125,125,164);
+     background: linear-gradient(to left ,#1e1631, #8989b4);
 }
 
 .ref-title{
@@ -934,61 +937,11 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     
 }
 
+
 .ref-title h3{
 	font-size:40px;
 	margin:0px;
 
-}
-
-
-#tRefCol1 .ref-index.visible .ref-title{
-	opacity:1;
-	-webkit-animation:RefTitleKeyframes1 1s both;
-	-moz-animation:RefTitleKeyframes1 1s both;
-	-ms-animation:RefTitleKeyframes1 1s both;
-	-o-animation:RefTitleKeyframes1 1s both;
-	animation:RefTitleKeyframes1 1s both;
-}
-
-#tRefCol2 .ref-index.visible .ref-title {
-    opacity: 1;
-    -moz-animation: RefTitleKeyframes2 1s both;
-    -o-animation: RefTitleKeyframes2 1s both;
-    -webkit-animation: RefTitleKeyframes2 1s both;
-    animation: RefTitleKeyframes2 1s both;
-}
-
-#tRefCol1 .ref-title{
-	right:20px;
-	top:20px;
-	text-align:right;
-   
-    height:30px;
-}
-
-#tRefCol2 .ref-title{
-	left:20px;
-	top:20px;
-	text-align:left;
-    
-    height:30px;
-    
-}
-
-.ref-infos-container{
-	position:relative;
-	width:230px;
-    height:105px;
-	border-bottom:1px solid white;
-    color:#FFF;
-	font-family:"Alef";
-    padding: 10px 0;
-}
-
-#tRefCol1 .ref-infos-container{
-	left: 145px;
-	top:25px;
-	text-align:justify;
 }
 
 .ref-index.open .SliderButtons {
@@ -1050,36 +1003,58 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     font-family: 'Alef', sans-serif;
     color: white;
 }
-.ref-close {
 
-    width:60px;
-    height:60px;
-    color:white;
-    
-    font-size:30px;
-    text-align: center;
-    line-height: 1.9;
 
-    border:1px solid transparent;
-    border-radius:30px;
-    
-    background: rgba(43,34,34,0.4);
 
-    cursor:pointer;
-    display:block;
-    position:absolute;
-    z-index:3;
-
+#tRefCol1 .ref-index.visible .ref-title{
+	opacity:1;
+	-webkit-animation:RefTitleKeyframes1 1s both;
+	-moz-animation:RefTitleKeyframes1 1s both;
+	-ms-animation:RefTitleKeyframes1 1s both;
+	-o-animation:RefTitleKeyframes1 1s both;
+	animation:RefTitleKeyframes1 1s both;
 }
 
-#tRefCol2 .ref-close{
-    
-    top:36px;
-    right:26px;
+#tRefCol2 .ref-index.visible .ref-title {
+    opacity: 1;
+    -moz-animation: RefTitleKeyframes2 1s both;
+    -o-animation: RefTitleKeyframes2 1s both;
+    -webkit-animation: RefTitleKeyframes2 1s both;
+    animation: RefTitleKeyframes2 1s both;
 }
 
+#tRefCol1 .ref-title{
+	right:20px;
+	top:20px;
+	text-align:right;
+   
+    height:30px;
+}
 
+#tRefCol2 .ref-title{
+	left:20px;
+	top:20px;
+	text-align:left;
+    
+    height:30px;
+    
+}
 
+.ref-infos-container{
+	position:relative;
+	width:230px;
+    height:105px;
+	border-bottom:1px solid white;
+    color:#FFF;
+	font-family:"Alef";
+    padding: 10px 0;
+}
+
+#tRefCol1 .ref-infos-container{
+	left: 145px;
+	top:25px;
+	text-align:justify;
+}
 
 #tRefCol2 .ref-infos-container{
 	left:90px;
@@ -1102,7 +1077,6 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     top:35px;
 }
 
-
 .brackets_1 {
      background: url(../img/sprite_pic.png) no-repeat 0 3px;
 
@@ -1117,8 +1091,6 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
       background: url(../img/sprite_pic.png) no-repeat 0 -149px;
       top:245px;
 }
-
-
 
 .brackets div:first-child {
   height:60px; 
@@ -1159,12 +1131,30 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     background-color:rgb(194, 151, 143);
 }
 
-#tRefCol2 .ref-close{
+.ref-close {
 
-	cursor:pointer;
+    width:60px;
+    height:60px;
+    color:white;
+    
+    font-size:30px;
+    text-align: center;
+    line-height: 1.9;
+
+    border:1px solid transparent;
+    border-radius:30px;
+    
+    background: rgba(43,34,34,0.4);
+
+    cursor:pointer;
     display:block;
     position:absolute;
     z-index:3;
+
+}
+
+#tRefCol2 .ref-close{
+    
     top:36px;
     right:26px;
 }
@@ -1172,10 +1162,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 #tRefCol1 .ref-close
 {
-    cursor:pointer;
-    display:block;
-    position:absolute;
-    z-index:3;
+    
     top:36px;
     left:26px;
 }
@@ -1187,15 +1174,6 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 	backgorund-position:center;
 	background-repeat:no-repeat;
 }
-
-
-#tRefCol1 .ref-resources.open .swipe  {
-	
-    width:770px !important;
-    
-    
-}
-
 
 .ref-resources .swipe{
 	height:100%;
@@ -1210,11 +1188,13 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 #tRefCol1 .ref-resources.open .swipe  {
 	
-    width:740px !important;
+    width:770px !important;
+    
     
 }
 
 .ref-fleche-gauche, .ref-fleche-droite{
+
     width:88px;
     height:88px;
     
@@ -1230,7 +1210,14 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     border:1px solid transparent;
     border-radius:44px;
     
-    background: rgba(43,34,34,0.4);}
+    background: rgba(43,34,34,0.4);
+
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+	z-index:2;
+}
 
 .ref-fleche-gauche{
 	left:30px;
@@ -1254,6 +1241,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 }
 .swipe-wrap > div {
   	float:left;
+    /*width:770px !important;*/
   	height:100%;
  	position: relative;
 } 
