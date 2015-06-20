@@ -2,8 +2,66 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link href="Custom.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="RXD">
+        <div class="circle circle-top-1" onclick="opacity1()">
+            <div class="RXD-info-corner opac-1">
+                <div class="RXD-info">
+                    <div class="RXD-info-head">R</div>
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+        <p>R X D = Ep</p>
+        <div class="circle circle-top-2">
+            <div class="RXD-info-corner opac-2">
+                <div class="RXD-info">
+                    <div class="RXD-info-head">D</div>
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+        <div class="circle circle-bot">
+            <div class="RXD-info-corner opac-3">
+                <div class="RXD-info">
+                    <div class="RXD-info-head">Ep</div>
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+    </div><p>*Relation of consumers' total potential energy for action*</p>
+    <script>
+        function opacity1() {
+            var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
+            if (elem.style.display == "none") {
+                elem.style.display = "block";
+            } else { elem.style.display = "none"; }
+            
+        }
+        function opacity2() {
+            var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
+            if (elem.style.display == "none") {
+                elem.style.display = "block";
+            } else { elem.style.display = "none"; }
 
+        }
+        function opacity3() {
+            var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
+            if (elem.style.display == "none") {
+                elem.style.display = "block";
+            } else { elem.style.display = "none"; }
+
+
+        }
+
+    </script>
 </body>
 </html>
