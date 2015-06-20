@@ -7,11 +7,11 @@
 // 1.Scrolling Parallax
 // Using jquery.scrolling-parallax.js
 
-$.scrollingParallax('img/body-dg.png', {
-    enableHorizontal: true,
-    bgWidth: 'auto',
-    staticSpeed: 0.03,
-});
+//$.scrollingParallax('img/body-dg.png', {
+//    enableHorizontal: true,
+//    bgWidth: 'auto',
+//    staticSpeed: 0.03,
+//});
 
 
 

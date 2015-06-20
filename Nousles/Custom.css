@@ -9,7 +9,10 @@
 */
 
 
-body {
+body {background-color:#000;
+}
+.bg {
+    background-image: url('img/body-dg.png');
 }
  /*
      -----------------------------1.Header-----------------------------
@@ -627,7 +630,7 @@ span.ui-slider-handle {
 }
 .hexa-group+hr{
     border:1px solid rgba(255,255,255,0.1);
-    width:1200px;
+    width: 100%;
 }
 .all-serv{
     width:160px;
