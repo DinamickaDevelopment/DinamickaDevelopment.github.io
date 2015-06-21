@@ -59,7 +59,7 @@ a#scroll:active:after{
      vertical-align:central;
  }
  .navbar-center{
-     width:680px;
+     width:690px;
      height:35px;
      margin:40px auto 0px;
  }
@@ -174,7 +174,7 @@ div.span+p{
     margin-top: 80px;
     height:86px;
     width: 390px;
-    background-image: url('img/bg-rxd.png');
+    background-image: url('../img/bg-rxd.png');
     position:relative;
 }
 .RXD p{
@@ -363,7 +363,7 @@ div.figures img{
     float:left;
 }
 .reach,.desirability{
-     background: url('img/lines.png') no-repeat;
+     background: url('../img/lines.png') no-repeat;
   background-position: 50% 39px;
   width: 150px;
   height: 256px;
@@ -498,7 +498,7 @@ div.figures img{
 .three-icon-image{
   width: 69px;
   height: 65px;
-  background-image: url('img/3_icons.png');
+  background-image: url('../img/3_icons.png');
 }
 .heart-icon{
       background-position: -2px -6px;
@@ -601,7 +601,7 @@ width:17px;
 .circ-2{
     position: absolute;
   top: 210px;
-  right: 448px;
+  right: 477px;
 }
 .infinity+div{
   width: 522px;
@@ -647,7 +647,7 @@ span.bold-span{
     ---------------------------MIKSHER-------------------------
 */
 span.ui-slider-handle {
-    background-image: url('img/range.png') !important;
+    background-image: url('../img/range.png') !important;
     border: none !important;
     border-radius: 0 !important;
     width: 26px !important;
@@ -1171,9 +1171,6 @@ width: 55px;
 footer .navbar-center{
       margin: 20px auto 40px;
 }
-footer .navbar-center li a:hover{
-      text-decoration:underline;
-}
 .Facebook{
     background-color:#3b5998;
 }
@@ -1208,7 +1205,7 @@ footer .navbar-center li a:hover{
 */
 @font-face {
     font-family: 'Chunkfive';
-    src: url('fonts/ChunkFive/Chunkfive.otf') format('opentype');
+    src: url('../fonts/ChunkFive/Chunkfive.otf') format('opentype');
 }
 /*
     -----------------------------#. Geometric-----------------------------

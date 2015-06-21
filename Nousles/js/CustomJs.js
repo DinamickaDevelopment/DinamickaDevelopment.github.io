@@ -190,7 +190,7 @@ function start() {
 
 
 
-//MENU SCROLLING WITH ACTIVE ITEM SELECTED
+//MENU SCROLLING
 jQuery(document).ready(function () {
     jQuery("a#scroll").click(function () {
         elementClick = jQuery(this).attr("href")
