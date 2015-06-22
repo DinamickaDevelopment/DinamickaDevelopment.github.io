@@ -1,4 +1,56 @@
 ﻿//Documentation
+var scrollTop = 0;
+var Mystyles = {
+
+    position: "fixed", 
+    width: "100%",
+    background: "#1a1a1a",
+    zIndex: "20"
+
+};
+
+//var noneStyle =
+//    {
+//        position: "static",
+//        width: "100%",
+//        background: "inherit",
+//        zIndex: "inherit"
+//    }
+
+$(document).scroll(
+            
+            function()
+            {
+                scrollTop = $(document).scrollTop();
+    		    
+                if (scrollTop > 150) {
+
+                    $(".opac-layout-50").css(Mystyles);
+                }
+
+                else
+                { 
+                    $(".opac-layout-50").attr("style"," ");
+
+                }
+
+    		//    var i = 0;
+    		
+    		//$('#tRefCol1 .ref-index').each(function () {
+
+    		//	var dsoffset = ($(this).height() * 0.66) - window.innerHeight;
+    		//	var ds = scrollTop - $(this).offset().top;
+			
+    		//	if(ds >= dsoffset && ds < $(this).height()){
+    		//		if(!$(this).hasClass('visible'))
+    		//			$(this).addClass('visible');
+    		//	}
+    		//	else if ($(this).hasClass('visible')) {
+    		//		$(this).removeClass('visible');
+    		//	}
+    		});
+
+
 
 //1.Scrolling Parallax
 //2.Service logic
@@ -7,11 +59,26 @@
 // 1.Scrolling Parallax
 // Using jquery.scrolling-parallax.js
 
-$.scrollingParallax('img/body-dg.png', {
+$.scrollingParallax('img/bg4.jpg', {
     enableHorizontal: true,
-    bgWidth: '150%',
-    staticSpeed: 0.03,
+    bgWidth: '100%',
+    staticSpeed: 0.04,
 });
+
+
+//$(document).ready(function () {
+//    $('body').each(function () {
+//        var $bgobj = $(this); // создаем объект
+//        $(window).scroll(function () {
+//            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
+//            // Присваиваем значение background-position
+//            var coords = '0' + yPos + 'px';
+//            // Создаем эффект Parallax Scrolling
+//            $bgobj.css({ backgroundPosition: coords });
+//        });
+//    });
+//});
+
 ///////-------------------------------------------------------------------
 function opacity1() {
     var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];

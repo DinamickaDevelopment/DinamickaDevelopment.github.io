@@ -6,8 +6,21 @@ body{
 .col-lg-12 
 {
     padding:0px;
+    float:none !important;
 
 }
+
+.col-lg-4 
+{
+   float:none !important;
+   
+}
+
+/*img[src^='img/bg4.jpg'] 
+{
+    height:102% !important;
+}*/
+
 a img{
 	border:none;
 }
