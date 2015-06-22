@@ -96,7 +96,7 @@ a#scroll:active:after{
 }
 .shadow{
     position:absolute;
-     left:512px;
+     left:400px;
     top: 167px;
     z-index: -1;
 }

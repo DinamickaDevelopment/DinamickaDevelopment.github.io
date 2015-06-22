@@ -4,9 +4,9 @@ var Mystyles = {
 
     position: "fixed", 
     width: "100%",
-    background: "#1a1a1a",
+    background: "rgba(0,0,0,0.9)",
     zIndex: "20"
-
+    //#1a1a1a
 };
 
 //var noneStyle =
