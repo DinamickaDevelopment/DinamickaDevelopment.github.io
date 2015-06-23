@@ -1,13 +1,13 @@
 ﻿//Documentation
-var scrollTop = 0;
-var Mystyles = {
+//var scrollTop = 0;
+//var Mystyles = {
 
-    position: "fixed", 
-    width: "100%",
-    background: "rgba(0,0,0,0.9)",
-    zIndex: "20"
-    //#1a1a1a
-};
+//    position: "fixed", 
+//    width: "100%",
+//    background: "rgba(0,0,0,0.9)",
+//    zIndex: "20"
+//    //#1a1a1a
+//};
 
 //var noneStyle =
 //    {
@@ -17,22 +17,22 @@ var Mystyles = {
 //        zIndex: "inherit"
 //    }
 
-$(document).scroll(
+//$(document).scroll(
             
-            function()
-            {
-                scrollTop = $(document).scrollTop();
+//            function()
+//            {
+//                scrollTop = $(document).scrollTop();
     		    
-                if (scrollTop > 150) {
+//                if (scrollTop > 150) {
 
-                    $(".opac-layout-50").css(Mystyles);
-                }
+//                    $(".opac-layout-50").css(Mystyles);
+//                }
 
-                else
-                { 
-                    $(".opac-layout-50").attr("style"," ");
+//                else
+//                { 
+//                    $(".opac-layout-50").attr("style"," ");
 
-                }
+//                }
 
     		//    var i = 0;
     		
@@ -48,7 +48,7 @@ $(document).scroll(
     		//	else if ($(this).hasClass('visible')) {
     		//		$(this).removeClass('visible');
     		//	}
-    		});
+    		//});
 
 
 

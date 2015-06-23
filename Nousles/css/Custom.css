@@ -19,9 +19,10 @@ body {background-image: url('img/body-dg.png') ;
      display:block;
  }
  .navbar-brand{
-  padding: 40px 15px;
+  padding: 0 !important;
+  height:44px;
   width: 175px;
-  margin: 0px auto;
+  margin: 40px auto 0 auto;
  }
  li a{
      font-family:Alef;
@@ -29,6 +30,7 @@ body {background-image: url('img/body-dg.png') ;
      font-style:italic;
      color:#fff;
  }
+ 
  li a:hover{
      font-weight:bold;
  }
@@ -51,7 +53,8 @@ a#scroll:active:after{
   top: 24px;
 }
 
- li{
+.nav  li{
+     
      font-family:Alef;
      font-size:20px;
      font-style:italic;
@@ -59,26 +62,32 @@ a#scroll:active:after{
      vertical-align:central;
  }
  .navbar-center{
-     width:690px;
+     width:700px;
      height:35px;
      margin:40px auto 0px;
  }
  .opac-layout-50{
     
+      position: fixed; 
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      z-index: 20;
 
-     background:rgba(0,0,0,0.5);
  }
 /*
     -----------------------------2.Welcome-----------------------------
 */
 #welcome{
+    margin-top:165px;
     display:block;
     height:529px;
 }
 .oran-grad{
     position:absolute;
-    z-index:0; #what
-} what+hr
+    z-index:0;
+} 
+
+#what+hr
 .lil-grad{
   position: absolute;
   z-index: 0;
