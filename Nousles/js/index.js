@@ -16,8 +16,10 @@ var Application = function(){
 		$(window).trigger('resize');
 		$(document).scrollTop(0);
 		//$('#playBtn').get(0).click();
-		//generateMap();
-		$('.ref-index:first').get(0).click();
+	    //generateMap();
+		var ddd = $('#reference0');
+
+		$('#reference0').click();
 		/*
 		var hash = document.location.hash;
 		if(hash.length > 0){

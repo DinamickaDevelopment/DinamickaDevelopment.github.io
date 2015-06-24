@@ -68,19 +68,22 @@ a#scroll:active:after{
  }
  .opac-layout-50{
     
-      position: fixed; 
-      width: 100%;
+      /*position: fixed;*/ 
+      /*width: 100%;*/
       background: rgba(0,0,0,0.8);
-      z-index: 20;
+      /*z-index: 20;*/
 
  }
-/*
-    -----------------------------2.Welcome-----------------------------
-*/
-#welcome{
-    margin-top:165px;
-    display:block;
-    height:529px;
+
+
+#welcome
+
+{
+
+    margin-top:20px !important;
+    display:block !important;
+    height:529px !important;
+
 }
 .oran-grad{
     position:absolute;
@@ -142,14 +145,16 @@ a#scroll:active:after{
 .assets:hover{
     padding-top:20px;
 }
-div h2{
+
+div h2 {
     width: auto;
+    height:47px;
     text-align: center;
     font-family: Bevan;
     font-size: 57px;
     color: #fff;
     margin: 80px 0px 0px 0px;
-    line-height: 30px;
+    line-height: 51px;
 }
 div.span+p{
     width:auto;
@@ -797,13 +802,17 @@ span.ui-slider-handle {
     top: 1210px;
     border-radius: 100px;
 }
-.vector-line-5{
-      width: 600px;
-  border-top: 3px solid #d14343;
-  transform: rotate(135deg);
-  left: 314px;
-  top: 1588px;
-  border-radius: 100px;
+.vector-line-5 {
+    width: 600px;
+    border-top: 3px solid #d14343;
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    left: 314px;
+    top: 1588px;
+    border-radius: 100px;
 }
 .vector-line-6 {
     width: 800px;
@@ -835,7 +844,8 @@ span.ui-slider-handle {
 #service{
     display:block;
 }
-.service-log p{
+
+div.service-log p{
 
   text-align: center;
   font-size: 20px;
@@ -848,7 +858,8 @@ span.ui-slider-handle {
   margin: 0 auto;
   
 }
-.service-log h2{
+div.service-log h2{
+    height:auto;
       width: 377px;
   text-align: center;
   font-family: Bevan;

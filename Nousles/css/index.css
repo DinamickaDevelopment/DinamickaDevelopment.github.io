@@ -149,28 +149,46 @@ a img{
 	position:relative;
 }
 
-body:not(.ipad) #nav.open .logo{
-	-webkit-animation: ShowBounce 1.5s both linear;
+body:not(.ipad) #nav.open .logo {
+    -webkit-animation: ShowBounce 1.5s both linear;
+    -moz-animation: ShowBounce 1.5s both linear;
+    -o-animation: ShowBounce 1.5s both linear;
+    animation: ShowBounce 1.5s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(1){
-	-webkit-animation:ShowNavItem 0.5s 0.2s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(1) {
+    -webkit-animation: ShowNavItem 0.5s 0.2s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.2s both linear;
+    -o-animation: ShowNavItem 0.5s 0.2s both linear;
+    animation: ShowNavItem 0.5s 0.2s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(2){
-	-webkit-animation:ShowNavItem 0.5s 0.1s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(2) {
+    -webkit-animation: ShowNavItem 0.5s 0.1s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.1s both linear;
+    -o-animation: ShowNavItem 0.5s 0.1s both linear;
+    animation: ShowNavItem 0.5s 0.1s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(3){
-	-webkit-animation:ShowNavItem 0.5s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(3) {
+    -webkit-animation: ShowNavItem 0.5s both linear;
+    -moz-animation: ShowNavItem 0.5s both linear;
+    -o-animation: ShowNavItem 0.5s both linear;
+    animation: ShowNavItem 0.5s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(4){
-	-webkit-animation:ShowNavItem 0.5s 0.1s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(4) {
+    -webkit-animation: ShowNavItem 0.5s 0.1s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.1s both linear;
+    -o-animation: ShowNavItem 0.5s 0.1s both linear;
+    animation: ShowNavItem 0.5s 0.1s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(5){
-	-webkit-animation:ShowNavItem 0.5s 0.2s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(5) {
+    -webkit-animation: ShowNavItem 0.5s 0.2s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.2s both linear;
+    -o-animation: ShowNavItem 0.5s 0.2s both linear;
+    animation: ShowNavItem 0.5s 0.2s both linear;
 }
 
 .nav-menu-item>a{
@@ -227,8 +245,10 @@ body:not(.ipad) #nav.open .nav-menu-item:nth-child(5){
 #qualifs{
 	border:0px;
 	border-collapse:collapse;
+
 	border-separate:0px;
-	width:100%;
+	
+    width:100%;
 	height:650px;
 	list-style:none;
 	margin:0px;
@@ -888,22 +908,39 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 .blur_ref-index_0 
 {
-    background: linear-gradient(to left ,#386663, #74c6c6); 
+    background:-moz-linear-gradient(left ,#386663, #74c6c6);
+    background:-webkit-linear-gradient(left ,#386663, #74c6c6);
+    background:-o-linear-gradient(left ,#386663, #74c6c6);
+    background:-ms-linear-gradient(left ,#386663, #74c6c6);
+        
+    /*background: linear-gradient(to left ,#386663, #74c6c6);*/ 
 }
 
 .blur_ref-index_1 
 {
-     background: linear-gradient(to left ,#9d6173, #4f2734);  
+     background: -webkit-linear-gradient(left ,#9d6173, #4f2734);
+     background: -o-linear-linear-gradient(left ,#9d6173, #4f2734);
+     background: -ms-linear-linear-gradient(left ,#9d6173, #4f2734);
+     background: -moz-linear-linear-gradient(left ,#9d6173, #4f2734);
+     /*background: linear-gradient(left ,#9d6173, #4f2734);*/  
 }
 
 .blur_ref-index_2 
 {
-     background: linear-gradient(to left ,#696344, #be8e85);  
+     background: -webkit-linear-gradient(left ,#696344, #be8e85);
+     background: -o-linear-gradient(left ,#696344, #be8e85);
+     background: -ms-linear-gradient(left ,#696344, #be8e85);
+     background: -moz-linear-gradient(left ,#696344, #be8e85);
+     /*background: linear-gradient(to left ,#696344, #be8e85);*/  
 }
 
 .blur_ref-index_3 
 {
-     background: linear-gradient(to left ,#1e1631, #8989b4);
+     background: -webkit-linear-gradient(left ,#1e1631, #8989b4);
+     background: -o-linear-linear-gradient(left ,#1e1631, #8989b4);
+     background: -ms-linear-gradient(left ,#1e1631, #8989b4);
+     background: -moz-linear-gradient(left ,#1e1631, #8989b4);
+     /*background: linear-gradient(to left ,#1e1631, #8989b4);*/
 }
 
 .ref-title{
@@ -940,7 +977,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 	font-family: 'Alef', sans-serif;
     color:white;
 
-    margin-top: 40px;
+    margin-top: 54px;
     padding:26px;
 
     text-align:justify;
@@ -962,7 +999,6 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     position:absolute;
     z-index:7;
 
-    bottom:0;
     width: 80px;
     height:16px;
 
@@ -1432,18 +1468,19 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 #voeux14 #go span:hover{
     background-image:url("images/go_hover.png");
 }
-#voeux14 .close_voeux, #contactThanks .close_contact_thanks{
-	 margin-top: -4%;
-	position: absolute;
-	left: 30%;
-	margin-left: 240px;
-	cursor:pointer;
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	-ms-transition:all 0.4s ease;
-	-o-transition:all 0.4s ease;
-	-transition:all 0.4s ease;
-}
+    #voeux14 .close_voeux, #contactThanks .close_contact_thanks {
+        margin-top: -4%;
+        position: absolute;
+        left: 30%;
+        margin-left: 240px;
+        cursor: pointer;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -transition: all 0.4s ease;
+    }
 #voeux14 .close_voeux:hover, #contactThanks .close_contact_thanks:hover{
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);

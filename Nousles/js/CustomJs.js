@@ -1,54 +1,43 @@
-﻿//Documentation
-//var scrollTop = 0;
-//var Mystyles = {
+﻿
+var scrollTop = 0;
+var Mystyles = {
 
-//    position: "fixed", 
-//    width: "100%",
-//    background: "rgba(0,0,0,0.9)",
-//    zIndex: "20"
-//    //#1a1a1a
-//};
+    position: "fixed", 
+    width: "100%",
+    background: "rgba(0,0,0,0.9)",
+    zIndex: "20",
+    top:"0"
+   
+};
 
-//var noneStyle =
-//    {
-//        position: "static",
-//        width: "100%",
-//        background: "inherit",
-//        zIndex: "inherit"
-//    }
+var noneStyle =
+    {
+        position: "static",
+        width: "100%",
+        background: "inherit",
+        zIndex: "inherit",
+        
+    }
 
-//$(document).scroll(
+$(document).scroll(
             
-//            function()
-//            {
-//                scrollTop = $(document).scrollTop();
+            function()
+            {
+                scrollTop = $(document).scrollTop();
     		    
-//                if (scrollTop > 150) {
+                if (scrollTop > 100) {
 
-//                    $(".opac-layout-50").css(Mystyles);
-//                }
+                    $("#Mymenu").css(Mystyles);
+                    $("#Mymenu .nav").css("margin", "20px auto 0px");
+                }
+                else
+                { 
+                    $("#Mymenu").attr("style", " ");
+                    $("#Mymenu .nav").css("margin", "20px auto 0px");
 
-//                else
-//                { 
-//                    $(".opac-layout-50").attr("style"," ");
+                }
 
-//                }
-
-    		//    var i = 0;
-    		
-    		//$('#tRefCol1 .ref-index').each(function () {
-
-    		//	var dsoffset = ($(this).height() * 0.66) - window.innerHeight;
-    		//	var ds = scrollTop - $(this).offset().top;
-			
-    		//	if(ds >= dsoffset && ds < $(this).height()){
-    		//		if(!$(this).hasClass('visible'))
-    		//			$(this).addClass('visible');
-    		//	}
-    		//	else if ($(this).hasClass('visible')) {
-    		//		$(this).removeClass('visible');
-    		//	}
-    		//});
+    		});
 
 
 
@@ -80,28 +69,47 @@ $.scrollingParallax('img/bg4.jpg', {
 //});
 
 ///////-------------------------------------------------------------------
-function opacity1() {
-    var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
-    if (elem.style.display == "none") {
-        elem.style.display = "block";
-    } else { elem.style.display = "none"; }
 
-}
-function opacity2() {
-    var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
-    if (elem.style.display == "none") {
-        elem.style.display = "block";
-    } else { elem.style.display = "none"; }
+$(".circle").click(function (event) {
 
-}
-function opacity3() {
-    var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
-    if (elem.style.display == "none") {
-        elem.style.display = "block";
-    } else { elem.style.display = "none"; }
+    $(".opac").each(function () {
+
+        $(this).css("display","none");
+
+    }); 
+
+    var mmm = this.firstElementChild;
+
+    mmm.style.display = "block";
+
+});
+//function opacity1() {
+//    var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
+//    if (elem.style.display == "none")
+//    {
+//        elem.style.display = "block";
+//    }
+//    else
+//    {
+//        elem.style.display = "none";
+//    }
+
+//}
+//function opacity2() {
+//    var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
+//    if (elem.style.display == "none") {
+//        elem.style.display = "block";
+//    } else { elem.style.display = "none"; }
+
+//}
+//function opacity3() {
+//    var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
+//    if (elem.style.display == "none") {
+//        elem.style.display = "block";
+//    } else { elem.style.display = "none"; }
 
 
-}
+//}
 
 //2.Service logic
 
