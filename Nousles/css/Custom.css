@@ -34,7 +34,7 @@ body {background-image: url('img/body-dg.png') ;
  li a:hover{
      font-weight:bold;
  }
-a#scroll:active:before{   content: "";
+a#scroll:not([class="assets"]):active:before{   content: "";
   width: 13px;
   height: 3px;
   color: #fff;
@@ -43,7 +43,7 @@ a#scroll:active:before{   content: "";
   top: 23px;
   left: 7px;
 }
-a#scroll:active:after{
+a#scroll:not([class="assets"]):active:after{
     content: "";
   width: 89%;
   height: 1px;
@@ -80,9 +80,9 @@ a#scroll:active:after{
 
 {
 
-    margin-top:20px !important;
+    margin-top: -42px !important;*/
     display:block !important;
-    height:529px !important;
+    height:585px !important;
 
 }
 .oran-grad{
@@ -104,7 +104,7 @@ a#scroll:active:after{
     position:absolute;
     left:345px;
     z-index:3;
-      top: 0px;
+    top: 62px;
 }
 .shadow{
     position:absolute;
@@ -131,6 +131,8 @@ a#scroll:active:after{
 
 }
 .assets {
+
+    display:block;
     border-top: 1px solid #fff;
     width: 44px;
     padding-top: 6px;
@@ -1375,11 +1377,12 @@ footer .navbar-center{
         border-right: 1px solid #fff;								
 		z-index:-2;						
 		overflow:hidden;
-		-webkit-backface-visibility: hidden;
+
+		/*-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
 		-o-backface-visibility: hidden;			
-		backface-visibility: hidden;			
+		backface-visibility: hidden;*/			
 	}
 	
 	.hex .corner-1 {
@@ -1412,12 +1415,12 @@ footer .navbar-center{
 	  
       background: inherit;
 
-	  background-repeat:no-repeat;
+	  /*background-repeat:no-repeat;
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
 		-o-backface-visibility: hidden;	
-		backface-visibility: hidden;				  
+		backface-visibility: hidden;*/				  
 	}			
 	
 

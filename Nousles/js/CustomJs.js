@@ -1,14 +1,14 @@
 ﻿
 var scrollTop = 0;
-var Mystyles = {
+//var Mystyles = {
 
-    position: "fixed", 
-    width: "100%",
-    background: "rgba(0,0,0,0.9)",
-    zIndex: "20",
-    top:"0"
+//    position: "fixed", 
+//    width: "100%",
+//    background: "rgba(0,0,0,0.9)",
+//    zIndex: "9999999999",
+//    top:"0"
    
-};
+//};
 
 var noneStyle =
     {
@@ -27,8 +27,8 @@ $(document).scroll(
     		    
                 if (scrollTop > 100) {
 
-                    $("#Mymenu").css(Mystyles);
-                    $("#Mymenu .nav").css("margin", "20px auto 0px");
+                    $("#Mymenu").attr('style', " position:fixed !important; width: 100% !important; background: rgba(0,0,0,0.9) !important; z-index: 999; top:0 !important");
+                    $("#Mymenu .nav").css("margin", "8px auto 0px");
                 }
                 else
                 { 
@@ -267,7 +267,7 @@ function start() {
 
 //MENU SCROLLING
 jQuery(document).ready(function () {
-    jQuery("a#scroll").click(function () {
+    jQuery(".scrolling").click(function () {
         elementClick = jQuery(this).attr("href")
         destination = jQuery(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
@@ -290,4 +290,13 @@ $(function () {
     });
 
     $("#amount").val($("#slider-vertical").slider("value"));
+
+    $("#slider-vertical-left, #slider-vertical-right").off();
+    $(".ui-slider-range").off();
+    $("ui-slider-handle").off();
+
 });
+
+
+
+
