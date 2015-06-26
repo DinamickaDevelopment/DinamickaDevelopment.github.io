@@ -19,6 +19,12 @@ body {background-image: url('img/body-dg.png') ;
      display:block;
  }
 
+#Mymenu
+{
+    position:relative;
+    z-index:999;
+}
+
  .navbar-brand{
   padding: 0 !important;
   height:44px;
