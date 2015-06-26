@@ -1,4 +1,4 @@
-﻿
+﻿var list_open = false;
 var scrollTop = 0;
 //var Mystyles = {
 
@@ -124,17 +124,24 @@ function start() {
     //Circle expand
     document.getElementById("cicle-group-info").addEventListener("click", CircleExpand, true);
     //Expande\Compression checkbox list
-    document.getElementById("checkboxClick").addEventListener("click", checkboxExpand, false);
-    //
+    document.getElementById("checkboxClick").addEventListener("focus", checkboxExpand, false);
+    //document.getElementById("checkboxClick").addEventListener("blur", checkboxExpand, false);
 
+
+    // Row
+
+    document.getElementById("Myaddon").addEventListener("click", checkboxExpand, false);
 
 
 
     var flag = false;
     function CircleExpand(e) {
         var elem = e.target;
+
         var closeIcon = document.createElement("div");
+
         closeIcon.className = "closeIcon";
+
         if (elem.className !== "closeIcon") {
             if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content" && elem.className !== "circle-head") {
                 if (elem.querySelector("#active-circle .closeIcon") == null) {
@@ -152,7 +159,21 @@ function start() {
             } else {
                 if(elem.className == "add"){
                 var selectedId = elem.parentElement.dataset.id;
-                document.getElementById(selectedId).setAttribute("checked", "checked");
+                var ServiceElement = document.getElementById(selectedId);
+                ServiceElement.setAttribute("checked", "checked");
+                ServiceElement.checked = true;
+
+                // Enter text into Select
+                 
+                Mytext = ServiceElement.nextSibling.innerHTML;
+
+                MyValText += $("#checkboxClick").val();
+
+                $("#checkboxClick").val(Mytext);
+
+
+              
+
             }
         }
             
@@ -227,14 +248,34 @@ function start() {
     }
 
     //Expande chexbox list(function)
-    function checkboxExpand() {
-        if (flag) {
-            document.getElementById("checkbox-holder").style.height = "0px";
-            flag = false;
-        } else {
-            document.getElementById("checkbox-holder").style.height = "150px";
-            flag = true;
+    
+
+    function checkboxExpand(event) {
+        if (event.type == "focus") {
+            document.getElementById("checkbox-holder").style.height = "137px";
+            list_open = true;
         }
+
+        else if (event.type == "blur") {
+            if (event.target.value == "")
+                document.getElementById("checkbox-holder").style.height = "0px";
+        }
+
+        else if (event.type == "click") {
+            if (list_open) {
+
+                document.getElementById("checkbox-holder").style.height = "0px";
+                list_open = false;
+            }
+            else
+            {
+                document.getElementById("checkbox-holder").style.height = "137px";
+                list_open = true;
+            }
+
+
+            }
+
         
     };
             function opacity1() {
@@ -271,6 +312,12 @@ jQuery(document).ready(function () {
         elementClick = jQuery(this).attr("href")
         destination = jQuery(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
+
+        if (elementClick === "#case1" || elementClick === "#case2")
+        {
+            jQuery(this).parent().click();
+        }
+
         return false;
     });
 });
@@ -297,6 +344,100 @@ $(function () {
 
 });
 
+
+
+$(document).ready(function () {
+
+    $('#checkboxClick').keyup(function (e) {
+
+        if (e.which == 38) {
+
+            $("#checkbox-holder").css("height", "0");
+            list_open = false;
+            return;
+
+        }
+        
+        $("#checkbox-holder").css("height", "137px");
+        list_open = true;
+
+        var value_input = $("#checkboxClick").val();
+
+        sortSelect('#checkbox-holder table tr', value_input);
+
+    });
+
+
+    // event listener click
+
+
+    $('#checkbox-holder input').change(
+        function (event) {
+
+            Mytext = this.nextSibling.innerHTML;
+            $("#checkboxClick").val(Mytext);
+
+        }
+
+        );
+
+
+});
+
+var sortSelect = function (select, value) {
+    
+   var table = $("#checkbox-holder table tbody");
+    var rezult = $();
+    //var min_or_equal = [];
+    //var other = [];
+    var pattern = new RegExp("^" + value);
+
+    select = $($(select).get().reverse());
+
+    if (value != "") {
+
+        select.each(function(index){    
+
+            var lable = $(this).find("label");
+            var text_lable = lable.text();
+
+
+            if (pattern.test(text_lable)){
+                
+                table.prepend(this);
+
+            }
+        });
+
+    }
+          else
+        {
+               
+        table.html(
+            $(select).sort(function (x, y) {
+                return $(x).find("label").text() < $(y).find("label").text() ? -1 : 1;
+            }));
+
+
+        // Enter text into Select
+
+        $('#checkbox-holder input').change(
+            function (event) {
+
+                Mytext = this.nextSibling.innerHTML;
+                $("#checkboxClick").val(Mytext);
+
+            }
+
+            );               
+           
+         
+
+        }
+     
+             
+
+};
 
 
 

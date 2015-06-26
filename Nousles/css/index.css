@@ -32,7 +32,7 @@ a img{
 
 #header 
 {
-    z-index:55;
+    /*z-index:55;*/
 }
 
 #header, .tactile-section, #footer, #nav, #content{
