@@ -995,7 +995,6 @@ div.service-log h2{
 #active-circle {
     width: 300px;
     height: 300px;
-    border-color: #6d5ea5;
     margin: 12px 24px 12px 24px;
     /*opacity: 0;
 
@@ -1004,10 +1003,78 @@ div.service-log h2{
     -webkit-transition: opacity 2s linear;
     transition: opacity 2s linear;*/
 }
-.circle-info:hover{
+/*.circle-info:hover{
     border-color:#6d5ea5;
     color:#6d5ea5;
+}*/
+
+    #active-circle.filter-brand:not(p) {
+    
+    border-color:#609d9e;
+    color:#609d9e;
+    
+    }
+
+    #active-circle.filter-webInter:not(p) {
+    
+    border-color:#7e505d;
+    color:#7e505d;
+    
+    }
+    
+   #active-circle.filter-manegment:not(p) {
+
+    border-color:#584d85;
+    color:#584d85;
+
 }
+
+   #active-circle.filter-marketing:not(p) 
+{
+    border-color:#c17366;
+    color:#c17366;
+}
+
+   #active-circle.filter-contGener:not(p)  
+{
+    border-color:#9f8a31;
+    color:#9f8a31;
+}
+
+
+
+
+.filter-brand:hover
+{
+    border-color:#609d9e;
+    color:#609d9e;    
+}
+
+.filter-webInter:hover 
+{
+    border-color:#7e505d;
+    color:#7e505d;
+}
+
+
+.filter-manegment:hover 
+{
+    border-color:#584d85;
+    color:#584d85;
+}
+
+.filter-marketing:hover 
+{
+    border-color:#c17366;
+    color:#c17366;
+}
+
+.filter-contGener:hover 
+{
+    border-color:#9f8a31;
+    color:#9f8a31;
+}
+
 #cicle-group-info{
     width:100%;
     min-height:225px;
@@ -1017,9 +1084,10 @@ div.service-log h2{
     width: 35px;
     height: 35px;
     position: absolute;
-    border: 2px solid #6d5ea5;
+    border: 2px solid;
+    border-color:inherit;
     border-radius: 100%;
-    color: #6d5ea5;
+    color: inherit;
     top: 0px;
     opacity: 0;
     font-family: FontAwesome;
@@ -1051,7 +1119,6 @@ div.service-log h2{
   font-size: 26px;
   font-family: alef;
   text-transform: uppercase;
-  color: #6d5ea5;
   font-weight: bold;
   line-height: 27px;
   display: block;
@@ -1078,7 +1145,6 @@ div.service-log h2{
   font-family: alef;
   font-weight: bold;
   margin-top: 10px;
-  color: #6d5ea5;
   display: block;
  }
 /*
