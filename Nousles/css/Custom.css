@@ -1003,6 +1003,43 @@ div.service-log h2{
     -webkit-transition: opacity 2s linear;
     transition: opacity 2s linear;*/
 }
+
+
+@-moz-keyframes opacity_animation {
+
+    from { opacity:0;   }
+    to { opacity:1; }
+
+        }
+
+@-webkit-keyframes opacity_animation {
+    from { opacity:0;   }
+    to { opacity:1; }
+
+
+        }
+
+@keyframes opacity_animation {
+
+    from { opacity:0;   }
+    to { opacity:1; }
+
+
+        }
+
+
+#active-circle > div {
+    -moz-animation-name: opacity_animation;
+    -o-animation-name: opacity_animation;
+    -webkit-animation-name: opacity_animation;
+    animation-name: opacity_animation;
+    
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
 /*.circle-info:hover{
     border-color:#6d5ea5;
     color:#6d5ea5;
@@ -1329,35 +1366,57 @@ input.button {
 
     display:block;
 
-    text-align:start;
+    text-align:left;
     width: 180px;
     height: 0px;
     top:42px;
     background-color: #f1f1f1;
-    overflow: auto;
+    
+    -ms-overflow-style: scrollbar;
+    overflow: scroll;
+    overflow-x: hidden;
+
     position: absolute;
-    margin-left: 99px;
+    margin-left: 111px;
 
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -o-transition: height 1s;
     transition: height 1s;
 }
+
+
+    /*#checkbox-holder.openholder {
+        height:137px;
+        
+    }*/
+
+
 .checkbox-holder input{
     display:block;
 }
 .Input-group-name{
-padding: 6px 12px;
+
+  display:block;
+  float:left;
+  
+  height: 42px;
+  width:110px;
+  
+  padding: 6px 12px;
+
   font-size: 14px;
   font-weight: normal;
   line-height: 1.6;
   color: #555;
   text-align: center;
+  
   background-color: #eee;
+  
   border: 1px solid #ccc;
   border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  float:left;
+  border-bottom-left-radius: 4px;
+  
 }
 .oneIn {
 
@@ -1370,7 +1429,7 @@ padding: 6px 12px;
     background-color: #f1f1f1;
     font-family: Alef !important;
     font-size: 18px;
-    /*height: 42px;*/
+    
 }
 td label{    
     display: inline-block;

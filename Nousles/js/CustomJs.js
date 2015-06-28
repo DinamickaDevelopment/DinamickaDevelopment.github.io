@@ -1,4 +1,5 @@
-﻿var list_open = false;
+﻿var Mytext = "";
+var list_open = false;
 var scrollTop = 0;
 //var Mystyles = {
 
@@ -148,7 +149,7 @@ function start() {
                     elem.id = "active-circle";
                     
                     setTimeout(function () {
-                        elem.innerHTML = "<span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span>"
+                        elem.innerHTML = "<div> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span> </div>"
                         elem.appendChild(closeIcon);
                         elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
                     }, 1100)
@@ -158,18 +159,14 @@ function start() {
              
             } else {
                 if(elem.className == "add"){
-                var selectedId = elem.parentElement.dataset.id;
+                    var selectedId = elem.parentElement.parentElement.dataset.id;
                 var ServiceElement = document.getElementById(selectedId);
                 ServiceElement.setAttribute("checked", "checked");
                 ServiceElement.checked = true;
 
-                // Enter text into Select
-                 
-                Mytext = ServiceElement.nextSibling.innerHTML;
-
-                MyValText += $("#checkboxClick").val();
-
-                $("#checkboxClick").val(Mytext);
+                // Enter text into Select                    
+                    
+                $("#checkboxClick").val(ServiceElement.nextSibling.innerHTML);
 
 
               
@@ -374,13 +371,14 @@ $(document).ready(function () {
     $('#checkbox-holder input').change(
         function (event) {
 
-            Mytext = this.nextSibling.innerHTML;
-            $("#checkboxClick").val(Mytext);
+            if (this.checked) {
+                Mytext = this.nextSibling.innerHTML;
+                $("#checkboxClick").val(Mytext);
+            }
 
         }
 
         );
-
 
 });
 
@@ -424,9 +422,13 @@ var sortSelect = function (select, value) {
         $('#checkbox-holder input').change(
             function (event) {
 
-                Mytext = this.nextSibling.innerHTML;
-                $("#checkboxClick").val(Mytext);
+                if (this.checked) {
 
+                    // Enter value to checkbox
+
+                    Mytext = this.nextSibling.innerHTML;
+                    $("#checkboxClick").val(Mytext);
+                }
             }
 
             );               
