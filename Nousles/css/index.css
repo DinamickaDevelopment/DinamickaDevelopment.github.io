@@ -895,8 +895,8 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     z-index: 1;
     
     
-    width: inherit;
-    height: inherit;
+    width: 585px;
+    height: 359px;
 
     opacity: 0.9;
     -moz-transition: opacity .5s ease-out;
