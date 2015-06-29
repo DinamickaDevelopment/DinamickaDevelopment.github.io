@@ -144,12 +144,12 @@ function start() {
         closeIcon.className = "closeIcon";
 
         if (elem.className !== "closeIcon") {
-            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content" && elem.className !== "circle-head") {
+            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content" && elem.className !== "circle-head" && elem.className !== "Allcircle") {
                 if (elem.querySelector("#active-circle .closeIcon") == null) {
                     elem.id = "active-circle";
                     
                     setTimeout(function () {
-                        elem.innerHTML = "<div> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span> </div>"
+                        elem.innerHTML = "<div class='Allcircle'> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span> </div>"
                         elem.appendChild(closeIcon);
                         elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
                     }, 1100)
@@ -159,10 +159,12 @@ function start() {
              
             } else {
                 if(elem.className == "add"){
+
                     var selectedId = elem.parentElement.parentElement.dataset.id;
-                var ServiceElement = document.getElementById(selectedId);
-                ServiceElement.setAttribute("checked", "checked");
-                ServiceElement.checked = true;
+                    var ServiceElement = document.getElementById(selectedId);
+
+                    ServiceElement.setAttribute("checked", "checked");
+                    ServiceElement.checked = true;
 
                 // Enter text into Select                    
                     

@@ -32,6 +32,13 @@ body {background-image: url('img/body-dg.png') ;
   margin: 40px auto 0 auto;
  }
  li a{
+
+     height:30px;
+
+     
+     padding:0 !important;
+
+     text-align: center;
      font-family:Alef;
      font-size:20px;
      font-style:italic;
@@ -41,6 +48,25 @@ body {background-image: url('img/body-dg.png') ;
  li a:hover{
      font-weight:bold;
  }
+
+
+ li a:focus{
+     
+     outline: 0; 
+  
+ }
+
+ li a:active{
+     
+     outline: 0; 
+  
+ }
+
+
+
+
+
+
 a#scroll:not([class="assets"]):active:before{   content: "";
   width: 13px;
   height: 3px;
@@ -62,11 +88,12 @@ a#scroll:not([class="assets"]):active:after{
 
 .nav  li{
      
+     text-align:center;
      font-family:Alef;
      font-size:20px;
      font-style:italic;
      color:#fff;
-     vertical-align:central;
+     vertical-align:bottom;
  }
  .navbar-center{
      width:700px;
@@ -1028,7 +1055,11 @@ div.service-log h2{
         }
 
 
-#active-circle > div {
+.Allcircle {
+
+      border: 1px solid transparent;
+      border-radius: 100%;
+
     -moz-animation-name: opacity_animation;
     -o-animation-name: opacity_animation;
     -webkit-animation-name: opacity_animation;
@@ -1177,10 +1208,14 @@ div.service-log h2{
     z-index: 2;
  }
  span.circle-head{
+
+  
+
   z-index: 2;
-  font-size: 20px;
+  font-size: 18px;
   font-family: alef;
   font-weight: bold;
+  letter-spacing: -1px;
   margin-top: 10px;
   display: block;
  }
