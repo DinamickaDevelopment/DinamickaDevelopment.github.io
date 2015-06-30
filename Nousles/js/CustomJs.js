@@ -55,20 +55,6 @@ $.scrollingParallax('img/bg4.jpg', {
     staticSpeed: 0.04,
 });
 
-
-//$(document).ready(function () {
-//    $('body').each(function () {
-//        var $bgobj = $(this); // создаем объект
-//        $(window).scroll(function () {
-//            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
-//            // Присваиваем значение background-position
-//            var coords = '0' + yPos + 'px';
-//            // Создаем эффект Parallax Scrolling
-//            $bgobj.css({ backgroundPosition: coords });
-//        });
-//    });
-//});
-
 ///////-------------------------------------------------------------------
 
 $(".circle").click(function (event) {
@@ -376,7 +362,9 @@ $(document).ready(function () {
             if (this.checked) {
                 Mytext = this.nextSibling.innerHTML;
                 $("#checkboxClick").val(Mytext);
-            }
+            } else {
+                $("#checkboxClick").val("");
+            };
 
         }
 

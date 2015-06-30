@@ -859,12 +859,11 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 	display:block;
 }
 
-.ref-index.open, .ref-infos.open
+.ref-infos.open,.ref-index.open
 {
-    width:400px;
+    width:415px;
    
 }
-
 #tRefCol2 .ref-infos.open
 {
  background-color:rgb(140, 87,103)!important;
@@ -880,6 +879,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 {
     width:770px;
     left: -185px;
+    z-index:1;
 }
 
 #tRefCol1 .ref-resources.open 
@@ -887,7 +887,6 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     width:770px;
     left: 0;
 }
-
 .blur_ref-index {
     position: absolute;
     left: 0;
