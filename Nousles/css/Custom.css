@@ -1326,9 +1326,8 @@ div.service-log h2{
 
 
 .input-group-addon {
-    text-align:left !important;
+
     width: 100px !important;
-    padding: 6px 8px !important;
 }
 
 
@@ -1438,11 +1437,6 @@ input.button {
 }
 .Input-group-name{
 
-    text-align:left !important;
-    padding: 6px 8px !important;
-
-
-
   display:block;
   float:left;
   
@@ -1455,7 +1449,7 @@ input.button {
   font-weight: normal;
   line-height: 1.6;
   color: #555;
-  
+  text-align: center;
   
   background-color: #eee;
   
@@ -1528,13 +1522,13 @@ input[type=checkbox]:checked + label:before {
     
     width: 100%;
     display: block;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: bold;
     opacity: 0;
     position: relative;
     top: 10px;
-    left: 22px;
+    left: 0;
     color: #f45151;
 
     -webkit-transition: opacity 1s;
