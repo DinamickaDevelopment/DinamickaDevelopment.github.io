@@ -170,6 +170,7 @@ a#scroll:not([class="assets"]):active:after{
 .assets {
 
     display:block;
+    z-index:15;
     border-top: 1px solid #fff;
     width: 44px;
     padding-top: 6px;
@@ -1325,7 +1326,9 @@ div.service-log h2{
 
 
 .input-group-addon {
+    text-align:left !important;
     width: 100px !important;
+    padding: 6px 8px !important;
 }
 
 
@@ -1435,6 +1438,11 @@ input.button {
 }
 .Input-group-name{
 
+    text-align:left !important;
+    padding: 6px 8px !important;
+
+
+
   display:block;
   float:left;
   
@@ -1447,7 +1455,7 @@ input.button {
   font-weight: normal;
   line-height: 1.6;
   color: #555;
-  text-align: center;
+  
   
   background-color: #eee;
   
