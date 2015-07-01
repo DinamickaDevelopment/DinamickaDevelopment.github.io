@@ -12,6 +12,15 @@
 body {background-image: url('img/body-dg.png') ;
       background-position-y:100px;
 }
+#contact_anchor, #case_anchor, #service_anchor, #how_anchor {
+    height: 1px;
+    position: absolute;
+    width: 100%;
+}
+#contact_anchor{top:7298px}
+#case_anchor{top:6342px}
+#service_anchor{top:5390px}
+#how_anchor{top:2223px}
  /*
      -----------------------------1.Header-----------------------------
  */

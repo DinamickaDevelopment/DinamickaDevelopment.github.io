@@ -59,8 +59,15 @@ $.scrollingParallax('img/bg4.jpg', {
 
 $(".circle").click(function (event) {
 
+
+
     $(this.firstElementChild).toggle();
 
+    for (var i = 0; i < document.getElementsByClassName("RXD-info-corner").length; i++) {
+        if (document.getElementsByClassName("RXD-info-corner")[i] !== this.firstElementChild) {
+            document.getElementsByClassName("RXD-info-corner")[i].style.display = "none";
+        }
+    };
     //$(".opac").each(function () {
 
     //    $(this).css("display","none");
@@ -70,6 +77,7 @@ $(".circle").click(function (event) {
     //var mmm = this.firstElementChild;
 
     //mmm.style.display = "block";
+
 
 });
 
@@ -242,6 +250,9 @@ function start() {
         function opacity1() {
             var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
             if (elem.style.display == "none") {
+                for (var i = 0; i < document.getElementsByClassName().length; i++) {
+
+                }
                 elem.style.display = "block";
             }
             else
