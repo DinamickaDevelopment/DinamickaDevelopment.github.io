@@ -31,34 +31,59 @@ body {background-image: url('img/body-dg.png') ;
   width: 175px;
   margin: 40px auto 0 auto;
  }
- li a{
 
-     height:30px;
+ .nav {
+
+       width: 700px;
+       height: 35px;
+       margin: 40px auto 0px;
+
+ }
+
+
+    .nav li.active > a {
+        background:none !important;
+    }
+
+.nav li a{
+
+     /*height:0;*/
 
      
-     padding:0 !important;
-
      text-align: center;
      font-family:Alef;
      font-size:20px;
      font-style:italic;
      color:#fff;
  }
- 
+
+
+.li_a {
+
+    padding:0 !important;
+
+}
+
+   li a:visited{
+     
+     outline: none; 
+  
+ }
+
  li a:hover{
      font-weight:bold;
  }
 
-
+ 
  li a:focus{
      
-     outline: 0; 
+     outline: none; 
   
  }
 
- li a:active{
+  li a:active{
      
-     outline: 0; 
+     outline: none; 
   
  }
 
@@ -87,19 +112,20 @@ a#scroll:not([class="assets"]):active:after{
 }
 
 .nav  li{
-     
-     text-align:center;
+  
+     /*text-align:center;
      font-family:Alef;
      font-size:20px;
      font-style:italic;
-     color:#fff;
-     vertical-align:bottom;
+     color:#fff;*/
+     
  }
- .navbar-center{
+ /*.navbar-center{
+     padding-bottom:14px;
      width:700px;
      height:35px;
      margin:40px auto 0px;
- }
+ }*/
  .opac-layout-50{
     
       /*position: fixed;*/ 

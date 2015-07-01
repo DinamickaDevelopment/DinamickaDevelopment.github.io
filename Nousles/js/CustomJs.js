@@ -59,44 +59,20 @@ $.scrollingParallax('img/bg4.jpg', {
 
 $(".circle").click(function (event) {
 
-    $(".opac").each(function () {
+    $(this.firstElementChild).toggle();
 
-        $(this).css("display","none");
+    //$(".opac").each(function () {
 
-    }); 
+    //    $(this).css("display","none");
 
-    var mmm = this.firstElementChild;
+    //}); 
 
-    mmm.style.display = "block";
+    //var mmm = this.firstElementChild;
+
+    //mmm.style.display = "block";
 
 });
-//function opacity1() {
-//    var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
-//    if (elem.style.display == "none")
-//    {
-//        elem.style.display = "block";
-//    }
-//    else
-//    {
-//        elem.style.display = "none";
-//    }
 
-//}
-//function opacity2() {
-//    var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
-//    if (elem.style.display == "none") {
-//        elem.style.display = "block";
-//    } else { elem.style.display = "none"; }
-
-//}
-//function opacity3() {
-//    var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
-//    if (elem.style.display == "none") {
-//        elem.style.display = "block";
-//    } else { elem.style.display = "none"; }
-
-
-//}
 
 //2.Service logic
 
@@ -263,25 +239,35 @@ function start() {
 
         
     };
-            function opacity1() {
+        function opacity1() {
             var elem = document.getElementsByClassName("RXD-info-corner opac-1")[0];
             if (elem.style.display == "none") {
                 elem.style.display = "block";
-            } else { elem.style.display = "none"; }
+            }
+            else
+            {
+                elem.style.display = "none";
+            }
             
         }
         function opacity2() {
             var elem = document.getElementsByClassName("RXD-info-corner opac-2")[0];
             if (elem.style.display == "none") {
                 elem.style.display = "block";
-            } else { elem.style.display = "none"; }
+            } else
+            {
+                elem.style.display = "none";
+            }
 
         }
         function opacity3() {
             var elem = document.getElementsByClassName("RXD-info-corner opac-3")[0];
             if (elem.style.display == "none") {
                 elem.style.display = "block";
-            } else { elem.style.display = "none"; }
+            } else
+            {
+                elem.style.display = "none";
+            }
 
 
         }
@@ -363,7 +349,12 @@ $(document).ready(function () {
                 Mytext = this.nextSibling.innerHTML;
                 $("#checkboxClick").val(Mytext);
             } else {
-                $("#checkboxClick").val("");
+
+
+                if ($('#checkbox-holder input:checked').length == 0)
+                {
+                    $("#checkboxClick").val("");
+                }
             };
 
         }
@@ -376,8 +367,7 @@ var sortSelect = function (select, value) {
     
    var table = $("#checkbox-holder table tbody");
     var rezult = $();
-    //var min_or_equal = [];
-    //var other = [];
+  
     var pattern = new RegExp("^" + value);
 
     select = $($(select).get().reverse());
