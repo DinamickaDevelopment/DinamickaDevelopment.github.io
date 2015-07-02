@@ -90,28 +90,19 @@ body {background-image: url('img/body-dg.png') ;
   
  }
 
-  li a:active{
-     
-     outline: none; 
-  
- }
 
-
-
-
-
-
-a#scroll:not([class="assets"]):active:before{   content: "";
-  width: 13px;
+li a.scrolling:active:before{
+    content:"";
+       width: 13px;
   height: 3px;
-  color: #fff;
   position: absolute;
   background-color: #fff;
   top: 23px;
   left: 7px;
+  
 }
-a#scroll:not([class="assets"]):active:after{
-    content: "";
+li a.scrolling:active:after{
+        content: "";
   width: 89%;
   height: 1px;
   background-color: #fff;
@@ -119,7 +110,6 @@ a#scroll:not([class="assets"]):active:after{
   left: 7px;
   top: 24px;
 }
-
 .nav  li{
   
      /*text-align:center;
@@ -141,15 +131,12 @@ a#scroll:not([class="assets"]):active:after{
       /*width: 100%;*/
       background: rgba(0,0,0,0.8);
       /*z-index: 20;*/
-
- }
-
-
+}
 #welcome
 
 {
 
-    margin-top: -42px !important;*/
+    margin-top: -42px !important;
     display:block !important;
     height:585px !important;
 

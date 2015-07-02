@@ -328,7 +328,7 @@ $(function () {
 
 
 
-$(document).ready(function () {
+$(document).ready(function () {//checkbox list expand
 
     $('#checkboxClick').keyup(function (e) {
 
@@ -351,17 +351,29 @@ $(document).ready(function () {
 
 
     // event listener click
-
+    var ChekedMas = [];
 
     $('#checkbox-holder input').change(
         function (event) {
+            Mytext = this.nextSibling.innerHTML;
 
             if (this.checked) {
-                Mytext = this.nextSibling.innerHTML;
                 $("#checkboxClick").val(Mytext);
+                ChekedMas.push(Mytext);//
             } else {
-
-
+                //
+                for (var i = 0; i < ChekedMas.length; i++) {
+                    if (ChekedMas[i] == Mytext) {
+                        delete ChekedMas[i];
+                    }
+                }
+                for (var i = 0; i < ChekedMas.length; i++) {
+                    if (ChekedMas[i] !== undefined) {
+                        $("#checkboxClick").val(ChekedMas[i]);
+                        break;
+                    }
+                }
+                //
                 if ($('#checkbox-holder input:checked').length == 0)
                 {
                     $("#checkboxClick").val("");
