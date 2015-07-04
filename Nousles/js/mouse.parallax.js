@@ -12,14 +12,18 @@ LICENSE: The MIT License (MIT)
 	
 		mouseParallax: function(options) {
 		
-			var defaults = { moveFactor: 5, zIndexValue: "-1", targetContainer: 'body' };
+			var defaults = { moveFactor: 5,verticalFactor: 5, zIndexValue: "-1", targetContainer: 'body' };
 		
 			var options = $.extend(defaults, options);
 		
 			return this.each(function() {
 				var o = options;
 				var background = $(this);
-				
+				var timeMouse = null, timeScroll = null;
+				if (o.zIndexValue) {
+				        background[0].style.zIndex = o.zIndexValue;
+				}
+
 				$(o.targetContainer).on('mousemove', function (e) {
 
 				    mouseX = e.pageX;
@@ -36,25 +40,36 @@ LICENSE: The MIT License (MIT)
 				    //topString = (0-percentY-o.moveFactor)+"%";    uncomment this part will turn on vertical parallax
 				    //bottomString = (0-percentY-o.moveFactor)+"%";
 
-				    background[0].style.left = leftString;
-				    background[0].style.right = rightString;
+
 				    //background[0].style.top = topString;
 				    //background[0].style.bottom = bottomString;
-				    if (o.zIndexValue) {
-				        background[0].style.zIndex = o.zIndexValue;
-				    }
+
+				    if (timeMouse)return;
+
+				    timeMouse = setTimeout(function () {
+				        background[0].style.left = leftString;
+				        background[0].style.right = rightString;
+				        timeMouse = null;
+				    }, 100);
+				    
 				});
 
 				$(window).on('scroll', function (e) {
 				    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 				    windowHeight = $(window).height();
-				    percentY = ((scrolled / windowHeight) * o.moveFactor) - (o.moveFactor / 2);
+				    percentY = ((scrolled / windowHeight) * o.verticalFactor) - (o.verticalFactor / 2);
 
-				    topString = (0-percentY-o.moveFactor)+"%";   
-				    bottomString = (0 - percentY - o.moveFactor) + "%";
+				    topString = (0 - percentY - o.verticalFactor) + "%";
+				    bottomString = (0 - percentY - o.verticalFactor) + "%";
 
-				    background[0].style.top = topString;
+				    
+				    if (timeScroll) return;
+
+				    timeScroll = setTimeout(function () {
+                    background[0].style.top = topString;
 				    background[0].style.bottom = bottomString;
+				    timeScroll = null;
+				    },100);
 				})
 			});
 		}					
