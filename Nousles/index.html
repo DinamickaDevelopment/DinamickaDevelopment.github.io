@@ -28,6 +28,7 @@
     <![endif]-->
 </head>
 <body data-type="background" data-speed="10">
+    <div id="parallaxBackground" class="mouse-bg"></div>
     <div id="welcome_anchor" style="height:1px;position:absolute;width:100%"></div>
     <header id="header">
         <div class="container-fluid opac-layout-50">
@@ -37,7 +38,7 @@
             </div>
 
             <div class="row" id="Mymenu">
-                
+
                 <ul class="nav nav-pills">
                     <li role="presentation" class="active"><a href=" #welcome_anchor" class="scrolling">Welcome</a></li>
 
@@ -94,7 +95,7 @@
         </div>
     </section>
 
-    
+
     <div id="menu_what" style="position:absolute; width:100%; height:20px; top:640px; "></div>
 
     <section id="what">
@@ -197,7 +198,7 @@
         </div>
     </section>
     <hr />
-    <div id="how_anchor" ></div>
+    <div id="how_anchor"></div>
     <section id="how">
         <div class="container">
             <div class="row">
@@ -265,7 +266,7 @@
         </div>
     </section>
     <hr />
-    <div  id="service_anchor"></div>
+    <div id="service_anchor"></div>
     <section id="service">
         <div class="container">
             <div class="row">
@@ -340,7 +341,7 @@
         </div>
     </section>
     <hr />
-    <div  id="case_anchor"></div>
+    <div id="case_anchor"></div>
     <section id="case">
         <div class="container">
             <div class="row">
@@ -577,7 +578,7 @@
             </div>
         </div>
     </section>
-    <div  id="contact_anchor"></div>
+    <div id="contact_anchor"></div>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -736,12 +737,20 @@
 
     <script src="js/jquery.scrolling-parallax.js"></script>
     <script src="js/parallax.min.js"></script>
-
+    <script src="js/mouse.parallax.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/FormJS.js"></script>
     <script src="js/CustomJs.js"></script>
     <script src="js/index.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#parallaxBackground').mouseParallax({ moveFactor: 3 });
+        });
+    </script>
+
 
 </body>
 </html>

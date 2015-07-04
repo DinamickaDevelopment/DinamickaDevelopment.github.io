@@ -49,11 +49,11 @@ $(document).scroll(
 // 1.Scrolling Parallax
 // Using jquery.scrolling-parallax.js
 
-$.scrollingParallax('img/bg4.jpg', {
-    enableHorizontal: true,
-    bgWidth: '100%',
-    staticSpeed: 0.04,
-});
+//$.scrollingParallax('img/bg4.jpg', {
+//    enableHorizontal: true,
+//    bgWidth: '100%',
+//    staticSpeed: 0.04,
+//});
 
 ///////-------------------------------------------------------------------
 

@@ -9,8 +9,18 @@
 */
 
 
-body {background-image: url('img/body-dg.png') ;
-      background-position-y:100px;
+body {
+}
+#parallaxBackground{
+background-image: url('../img/body-dg.png') ;
+}
+.mouse-bg {
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: fixed;
+z-index: -1;
 }
 #contact_anchor, #case_anchor, #service_anchor, #how_anchor {
     height: 1px;
@@ -1693,7 +1703,7 @@ footer .navbar-center{
         background: inherit;
         border-left: 1px solid #fff;
         border-right: 1px solid #fff;								
-		z-index:-2;						
+		z-index:-1;						
 		overflow:hidden;
 
 		/*-webkit-backface-visibility: hidden;
