@@ -20,9 +20,9 @@ LICENSE: The MIT License (MIT)
 				var o = options;
 				var background = $(this);
 				var timeMouse = null, timeScroll = null;
-				if (o.zIndexValue) {
-				        background[0].style.zIndex = o.zIndexValue;
-				}
+				//if (o.zIndexValue) {
+				//        background[0].style.zIndex = o.zIndexValue;
+				//}
 
 				$(o.targetContainer).on('mousemove', function (e) {
 
