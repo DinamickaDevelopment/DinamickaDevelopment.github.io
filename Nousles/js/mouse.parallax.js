@@ -1,13 +1,4 @@
-/*
-Mouse Parallax
-==============
-A simple jQuery plugin to allow given elements to be used as backgrounds that respond to mouse movement.  Could easily be further extended or modified.
---------------
-Author: "Pip Beard Design," Benjamin Alan Robinson
-LICENSE: The MIT License (MIT)
-*/
-
-(function ( $ ) {
+(function ( $ ) { 
 	$.fn.extend({
 	
 		mouseParallax: function(options) {
