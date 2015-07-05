@@ -40,21 +40,6 @@ $(document).scroll(
 
     		});
 
-
-
-//1.Scrolling Parallax
-//2.Service logic
-
-
-// 1.Scrolling Parallax
-// Using jquery.scrolling-parallax.js
-
-//$.scrollingParallax('img/bg4.jpg', {
-//    enableHorizontal: true,
-//    bgWidth: '100%',
-//    staticSpeed: 0.04,
-//});
-
 ///////-------------------------------------------------------------------
 
 $(".circle").click(function (event) {
@@ -303,6 +288,20 @@ jQuery(document).ready(function () {
         return false;
     });
 });
+
+//Smooth Scroll 
+//jQuery(document).ready(function () {
+
+//    $(document).bind('wheel', function (e) {
+//        var nt = $(document.body).scrollTop() + e.deltaY;
+//        e.preventDefault();
+//        e.stopPropagation();
+//        $("html:not(:animated),body:not(:animated)").stop().animate({
+//            scrollTop: nt
+//        }, 100);
+//    })
+//});
+
 
 
 //mikshers
