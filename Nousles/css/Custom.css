@@ -54,7 +54,7 @@ z-index: -1;
   height: 100%;
 }
 #SVG_canvas path{
-    transition:stroke-dashoffset 1s;
+    transition:stroke-dashoffset 0.7s;
 }
  /*
      -----------------------------1.Header-----------------------------
@@ -199,6 +199,7 @@ li a.scrolling:active:after{
     left:345px;
     z-index:3;
     top: 580px;
+    opacity:0;
     -moz-animation:slidePrism 1s ease-out 1s forwards;
     -o-animation:slidePrism 1s ease-out 1s forwards;
     -webkit-animation:slidePrism 1s ease-out 1s forwards;
