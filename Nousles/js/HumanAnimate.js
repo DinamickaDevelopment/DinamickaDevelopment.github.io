@@ -61,6 +61,8 @@ function start() {
         var gift = document.getElementsByClassName("gift")[0];
 
 
+
+
 /*==============================================================        Two drivers + gift ==================================================================*/
 
         containerDots.appendChild(manContainer1);
