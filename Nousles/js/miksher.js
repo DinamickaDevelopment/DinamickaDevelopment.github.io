@@ -12,49 +12,52 @@
         newDivPointer1 = document.createElement('div'),
         newDivPointer2 = document.createElement('div');
 
-    newDivForAnimationTwoMan.className = "two-men";
-    newDivForAnimationOneMan.className = "one-man";
-    newElemMan.setAttribute('src', 'img/man2.png');
-    newElemMan1.setAttribute('src', 'img/man2.png');
-    newElemMan2.setAttribute('src', 'img/man2.png');
-    newDivPointer.className = "pointer pointer-1 newPointer";
-    newDivPointer1.className = "pointer pointer-2 newPointer";
-    newDivPointer2.className = "pointer pointer-3 newPointer";
+//    function give attributes & styles
 
-    newDivForAnimationTwoMan.style.cssText = "width: 134px; height: 100px; position: absolute; left: 60px; transition: all 1.2s; opacity: 0;";
-    newDivForAnimationOneMan.style.cssText = "width: 31px; height: 100px; position: absolute; left: 95px; transition: opacity 1.2s, left 2.2s; opacity: 0;";
+    var startOption = function () {
+        newDivForAnimationTwoMan.className = "two-men";
+        newDivForAnimationOneMan.className = "one-man";
+        newElemMan.setAttribute('src', 'img/man2.png');
+        newElemMan1.setAttribute('src', 'img/man2.png');
+        newElemMan2.setAttribute('src', 'img/man2.png');
+        newElemMan2.id = 'imgMan';
+        newDivPointer.className = "pointer pointer-1 newPointer";
+        newDivPointer1.className = "pointer pointer-2 newPointer";
+        newDivPointer2.className = "pointer pointer-3 newPointer";
 
-    newDivPointer.style.cssText = 'left: 7px;'
-    newDivPointer1.style.cssText = 'left: 76px;'
-    newDivPointer2.style.cssText = 'left: 6px;'
-    newElemMan1.style.cssText = 'left: 69px; position: absolute;'
-    var first = derictoryMans.firstChild;
-    derictoryMans.insertBefore(newDivForAnimationTwoMan, first);
-    first = derictoryMans.firstChild;
-    derictoryMans.insertBefore(newDivForAnimationOneMan, first.nextElementSibling);
+        newDivForAnimationTwoMan.style.cssText = "width: 134px; height: 100px; position: absolute; left: 60px; transition: all 1.2s; opacity: 0;";
+        newDivForAnimationOneMan.style.cssText = "width: 31px; height: 100px; position: absolute; left: 95px; transition: opacity 1.2s, left 2.2s, top 2s; opacity: 0;";
 
-    newDivForAnimationTwoMan.appendChild(newElemMan);
-    newDivForAnimationTwoMan.appendChild(newElemMan1);
-    newDivForAnimationOneMan.appendChild(newElemMan2);
-    newDivForAnimationTwoMan.appendChild(newDivPointer);
-    newDivForAnimationTwoMan.appendChild(newDivPointer1);
-    newDivForAnimationOneMan.appendChild(newDivPointer2);
+        newDivPointer.style.cssText = 'left: 7px;'
+        newDivPointer1.style.cssText = 'left: 76px;'
+        newDivPointer2.style.cssText = 'left: 6px;'
+        newElemMan1.style.cssText = 'left: 69px; position: absolute;'
+        newElemMan2.style.cssText = 'position: relative; transition: all 1.2s;'
+        var first = derictoryMans.firstChild;
+        derictoryMans.insertBefore(newDivForAnimationTwoMan, first);
+        first = derictoryMans.firstChild;
+        derictoryMans.insertBefore(newDivForAnimationOneMan, first.nextElementSibling);
 
+        newDivForAnimationTwoMan.appendChild(newElemMan);
+        newDivForAnimationTwoMan.appendChild(newElemMan1);
+        newDivForAnimationOneMan.appendChild(newElemMan2);
+        newDivForAnimationTwoMan.appendChild(newDivPointer);
+        newDivForAnimationTwoMan.appendChild(newDivPointer1);
+        newDivForAnimationOneMan.appendChild(newDivPointer2);
 
-    //    visible & unvisible elements
+        //    visible & unvisible elements
 
-    var men = new Array;
-    for (var i = 2; i < 8; i++) {
-        men[i] = document.querySelector('.man' + i);
-        men[i].style.visibility = 'hidden';
+        var men = new Array;
+        for (var i = 2; i < 8; i++) {
+            men[i] = document.querySelector('.man' + i);
+            men[i].style.visibility = 'hidden';
+        }
+
+        var pointer = document.querySelectorAll('.pointer');
+        for (i = 0; i < pointer.length; i++) {
+            pointer[i].style.visibility = 'hidden';
+        }
     }
-
-    var pointer = document.querySelectorAll('.pointer');
-    for (i = 0; i < pointer.length; i++) {
-        pointer[i].style.visibility = 'hidden';
-    }
-
-
 
     //    events for buttons
 
@@ -108,19 +111,23 @@
 
             var visibleOneMan = function () {
                 newDivForAnimationOneMan.style.opacity = '1';
+                clearTimeout(visibleOneMan);
             }
 
             var unVisibleTwoMen = function () {
                 newDivForAnimationTwoMan.style.opacity = '0';
+                clearTimeout(unVisibleTwoMen);
             }
 
             var manSleeping = function () {
                 newElemMan.setAttribute('src', 'img/man3.png');
                 newElemMan1.setAttribute('src', 'img/man3.png');
+                clearTimeout(manSleeping);
             }
 
             var visibleTwoMen = function () {
                 newDivForAnimationTwoMan.style.opacity = '1';
+                clearTimeout(visibleTwoMen);
             }
 
             var moveToBasket = function () {
@@ -134,6 +141,28 @@
                     clearTimeout(moveToBasket);
                 }
             }
+            var moveGiftImg = document.querySelector('.gift');
+            var moveManImg = document.getElementById('imgMan');
+            moveGiftImg.style.cssText = 'transition: all 1.2s';
+            var toTopForGift = -11,
+                toTop = 20,
+                moveToTop = function () {
+                    if (toTop >= -80 || toTopForGift >= -91) {
+                        moveGiftImg = document.querySelector('.gift')
+                        moveManImg = document.getElementById('imgMan');
+                        moveGiftImg.style.top = toTopForGift - 20 + 'px';
+                        moveManImg.style.top = toTop - 20 + 'px';
+                        toTopForGift = moveGiftImg.style.top;
+                        toTop = moveManImg.style.top;
+                        toTopForGift = toTopForGift.substring(0, toTop.length - 2);
+                        toTop = toTop.substring(0, toTop.length - 2);
+                        setTimeout(moveToTop, 50);
+                    } else {
+                        moveManImg.style.opacity = "0";
+                        moveGiftImg.style.opacity = "0";
+                        clearTimeout(moveToTop);
+                    }
+                }
 
             var unvisibleAll = function () {
                 newDivForAnimationTwoMan.style.opacity = '0';
@@ -148,7 +177,13 @@
             setTimeout(manSleeping, 7500);
             setTimeout(visibleTwoMen, 8300);
             setTimeout(moveToBasket, 8800);
-            setTimeout(unvisibleAll, 12800)
+            setTimeout(moveToTop, 12800);
+            setTimeout(unvisibleAll, 14500);
+            setTimeout(startOption, 15500);
 
         }
+
+//    back to start options
+    startOption()
+
 })()
