@@ -16,6 +16,7 @@
     <link href="css/fontfaces.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/keyframes.css" rel="stylesheet" />
+    <link href="css/animateStyle.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     
     <!-- Google fonts -->
@@ -156,17 +157,11 @@
                         <div class="mans">
                             <div class="figures">
                                 <img src="img/man1.png" class="man1" />
-                                <img src="img/man2.png" class="man2" />
-                                <img src="img/man3.png" class="man3" />
-                                <img src="img/man4.png" class="man4" />
-                                <img src="img/man5.png" class="man5" />
-                                <img src="img/man6.png" class="man6" />
-                                <img src="img/man7.png" class="man7" />
                                 <img src="img/gift.png" class="gift" />
                                 <img src="img/basket.png" class="basket" />
                             </div>
                             <div class="hum-dot"><img src="img/hum-dot.png" /></div>
-                            <div class="hum-line-container"><div class="hum-line"><div class="pointer pointer-1"></div><div class="pointer pointer-2"></div><div class="pointer pointer-3"></div></div></div>
+                            <div class="hum-line-container"><div class="hum-line"></div></div>
                             <div class="hum-dot"><img src="img/hum-dot.png" /></div>
                         </div>
                         <div class="miksher">
@@ -178,9 +173,9 @@
                                 <span>50%<br>Reach</span>
                             </div>
                             <div class="numbers">
-                                <div class="btn-num">1</div>
-                                <div class="btn-num">2</div>
-                                <div class="btn-num">3</div>
+                                <div id="preset1" class="btn-num">1</div>
+                                <div id="preset2" class="btn-num">2</div>
+                                <div id="preset3" class="btn-num">3</div>
 
                             </div>
                             <div class="Ep"><img src="img/wi-fi.png" /><span>Ep</span></div>
@@ -208,7 +203,7 @@
                          xmlns:xlink="http://www.w3.org/1999/xlink"
                          id="SVG_canvas">
                         <path d="M620,23 L730,131" style="stroke:#AB9230;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:155px;stroke-dashoffset:0px;"
-                              data-2224="stroke-dashoffset:155px;"  data-2399="stroke-dashoffset:0;"  />
+                              data-2224="stroke-dashoffset:155px;" data-2399="stroke-dashoffset:0;" />
                         <path d="M646,341 L489,471" style="stroke:#4fa5a5;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:204px;stroke-dashoffset:0px;"
                               data-2400="stroke-dashoffset:204px;" data-2666="stroke-dashoffset:0;" />
                         <path d="M950,494 L700,913" style="stroke:#4fa5a5;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:488px;stroke-dashoffset:0px;"
@@ -235,7 +230,7 @@
                             <div class="three-icon-line"></div>
                             <div class="three-icon-image infinity-icon"></div>
                         </div>
-                        <div class="brain" style="transition:opacity 1s;"  data-2266="opacity:0" data-2400="opacity:1">
+                        <div class="brain" style="transition:opacity 1s;" data-2266="opacity:0" data-2400="opacity:1">
                             <img src="img/brain.png" />
                         </div>
                         <div class="text-box" style="opacity:0;transition:opacity 1s;" data-2533="opacity:0" data-2666="opacity:1">
@@ -248,20 +243,27 @@
                             <span>Trying to reach a deeper layer of the prospects’ set of considerations, we start mapping the prospects associative world, carefully unveiling the deeper motivation that unconsciously cast their effect on the prospect process of decision making. You could call it their intuition.</span>
                         </div>
                     </div>
-                    <div class="infinity">
-                        <div class="circ-1"></div><div class="Fr-Fe">{Fr+Fe =D}</div><div class="circ-2"></div>
-                        <img src="img/heart_small.png" />
 
-                        <div class=" red_circle infinity_circle "></div>
+                    <div class="infinity">
+
+                        <div class="circ-1"></div><div class="Fr-Fe">{Fr+Fe =D}</div><div class="circ-2"></div>
+
+
+                        <!--<div class=" red_circle infinity_circle "></div>
                         <div class="blue_circle infinity_circle"></div>
                         <div class="yellow_circle infinity_circle"></div>
                         <div class="green_circle infinity_circle"></div>
                         <div class="lightgreen_circle infinity_circle"></div>
+                        <img src="img/infinity.png" />-->
 
 
 
-                        <img src="img/infinity.png" />
-                        <img src="img/brain_small.png" />
+                        <img id="heart_small" src="img/heart_small.png" />
+
+                        <div id="Stage" class="EDGE-255909414">
+                        </div>
+
+                        <img id="brain_small" src="img/brain_small.png" />
 
                     </div>
                     <div>
@@ -755,6 +757,7 @@
     <script src="js/swipe.js"></script>
     <script src="js/FormJS.js"></script>
     <script src="js/CustomJs.js"></script>
+    <script src="js/HumanAnimate.js"></script>
     <script src="js/index.js"></script>
     <script>
         skrollr.init({
@@ -768,6 +771,24 @@
             $('#parallaxBackground').mouseParallax({ moveFactor: 5, verticalFactor: 5 });
         });
     </script>
+
+
+    <!--Infinity-->
+
+    <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
+    <script>
+        AdobeEdge.loadComposition('iNF', 'EDGE-255909414', {
+            scaleToFit: "none",
+            centerStage: "none",
+            minW: "0",
+            maxW: "undefined",
+            width: "550px",
+            height: "250px"
+        }, { "dom": {} }, { "dom": {} });
+    </script>
+
+
+
 
 
 </body>
