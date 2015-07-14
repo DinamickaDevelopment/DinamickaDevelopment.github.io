@@ -756,6 +756,10 @@ div.figures img{
   width: 330px;
   left: 170px;
   top: 575px;
+  -moz-transition:opacity 1s;
+  -o-transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+  transition:opacity 1s;
 }
 .text-box2{
 top: 1240px;
