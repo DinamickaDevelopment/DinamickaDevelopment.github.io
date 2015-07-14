@@ -290,37 +290,37 @@ jQuery(document).ready(function () {
 });
 
 //Smooth Scroll 
-jQuery(document).ready(function () {
+//jQuery(document).ready(function () {
 
-    var elem = document.getElementById("body-el");
+//    var elem = document.getElementById("body-el");
 
-    if (elem.addEventListener) {
-        if ('onwheel' in document) {
-            // IE9+, FF17+
-            elem.addEventListener("wheel", onWheel);
-        } else if ('onmousewheel' in document) {
-            // устаревший вариант события
-            elem.addEventListener("mousewheel", onWheel);
-        } else {
-            // Firefox < 17
-            elem.addEventListener("MozMousePixelScroll", onWheel);
-        }
-    } else { // IE8-
-        elem.attachEvent("onmousewheel", onWheel);
-    }
+//    if (elem.addEventListener) {
+//        if ('onwheel' in document) {
+//            // IE9+, FF17+
+//            elem.addEventListener("wheel", onWheel);
+//        } else if ('onmousewheel' in document) {
+//            // устаревший вариант события
+//            elem.addEventListener("mousewheel", onWheel);
+//        } else {
+//            // Firefox < 17
+//            elem.addEventListener("MozMousePixelScroll", onWheel);
+//        }
+//    } else { // IE8-
+//        elem.attachEvent("onmousewheel", onWheel);
+//    }
 
-    function onWheel(e) {
-        e = e || window.event;
+//    function onWheel(e) {
+//        e = e || window.event;
 
-        var delta = e.deltaY || e.detail || e.wheelDelta;
-        var nt = $(document.body).scrollTop() + delta;
-        e.stopPropagation();
-        $("html:not(:animated),body:not(:animated)").stop().animate({
-            scrollTop: nt
-        }, 200);
-        e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-    }
-});
+//        var delta = e.deltaY || e.detail || e.wheelDelta;
+//        var nt = $(document.body).scrollTop() + delta;
+//        e.stopPropagation();
+//        $("html:not(:animated),body:not(:animated)").stop().animate({
+//            scrollTop: nt
+//        }, 100);
+//        e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+//    }
+//});
 
 
 
