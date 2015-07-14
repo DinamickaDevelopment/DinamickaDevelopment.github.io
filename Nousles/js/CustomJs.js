@@ -313,7 +313,7 @@ jQuery(document).ready(function () {
         e = e || window.event;
 
         var delta = e.deltaY || e.detail || e.wheelDelta;
-        var nt = $(document.body).scrollTop() + delta/2;
+        var nt = $(document.body).scrollTop() + delta;
         e.stopPropagation();
         $("html:not(:animated),body:not(:animated)").stop().animate({
             scrollTop: nt
