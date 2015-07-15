@@ -79,27 +79,18 @@ function start() {
 
         timeoutHolder = setTimeout(function () {
             containerDots.appendChild(manContainer2);
-            manContainer2.className = "manBox width-80 preset2-talkingMan-animate";
+            manContainer2.className = "manBox preset2-runBeforeTalkMan-animate"
             manContainer2.appendChild(pointer2);
             pointer2.className = "pointer";
-            gift.className = "gift";
+            gift.className = "gift preset2-gift-scene2-animation"
             deeptimeoutholder = setTimeout(function () {
-                containerDots.appendChild(manContainer3);
-                manContainer3.className = "manBox  width-80 preset2-runingAfterTalkMan-animate";
-                manContainer3.appendChild(pointer3);
-                pointer3.className = "pointer";
-                gift.className = "gift preset2-gift1-animation";
+                manContainer2.className = "manBox width-80 preset2-speechTalkMan-animation";
                 deepdeeptimeoutholder = setTimeout(function () {
-                    gift.className = "gift";
-                }, 12300);
-                deepdeepdeeptimeoutholder = setTimeout(function () {
-                    
-                    manContainer3.className = "manBox preset2-runingFinalMan-animate";
-                    gift.classList.add("preset2-gift1-animation");
-                },13000)
-            }, 2700);
-
-        }, 9100);
+                    manContainer1.className = "manBox width-80 preset2-answerTalkman-animation"
+                    gift.className = "gift preset2-gift-scene3-animate"
+                },7000);
+            }, 9010);
+        },10600)
 
     }
 

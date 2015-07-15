@@ -15,18 +15,16 @@
 background-image: url('../img/bg5.jpg') ;
 }
 .mouse-bg {
-left: 0;
-right: 0;
-bottom: 0;
-top: 0;
-position: fixed;
-z-index: -1;
-    -moz-transition:left .5s ease-out, right .5s ease-out,      top .5s ease-out,bottom .5s ease-out;
-    -o-transition:left .5s ease-out, right .5s ease-out,        top .5s ease-out,bottom .5s ease-out;
-    -webkit-transition:left .5s ease-out, right .5s ease-out,   top .5s ease-out,bottom .5s ease-out;
-    transition:left .5s ease-out, right .5s ease-out,           top .5s ease-out,bottom .5s ease-out;
-
-
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    -moz-transition: left .4s ease-out, right .4s ease-out,top .4s ease-out,bottom .4s ease-out;
+    -o-transition: left .4s ease-out, right .4s ease-out,top .4s ease-out,bottom .4s ease-out;
+    -webkit-transition: left .4s ease-out, right .4s ease-out,top .4s ease-out,bottom .4s ease-out;
+    transition: left .4s ease-out, right .4s ease-out,top .4s ease-out,bottom .4s ease-out;
 }
 
 /*
