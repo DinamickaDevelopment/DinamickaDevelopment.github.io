@@ -141,62 +141,116 @@ function start() {
 
     function hex2Click(e) {
         var elements = document.getElementsByClassName("filter-brand");
-        if (elements[1].style.display == "block") {
+        if (elements[0].dataset.condition == "0") {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "none";
+                elements[i].classList.add('display-block');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.add('opacity-1');
+                    }
+                }, 20);
+                elements[0].dataset.condition = "1";
             }
         } else {
             for (var i = 0; i < elements.length; i++) {
-                        elements[i].style.display = "block";
+                elements[i].classList.remove('opacity-1');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                         elements[j].classList.remove('display-block');
                     }
+                   }, 310); elements[0].dataset.condition = "0";
+            }
         }
-        
     }
     function hex3Click(e) {
         var elements = document.getElementsByClassName("filter-webInter");
-        if (elements[1].style.display == "block") {
+        if (elements[0].dataset.condition == "0") {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "none";
+                elements[i].classList.add('display-block');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.add('opacity-1');
+                    }
+                }, 20);
+                elements[0].dataset.condition = "1";
             }
         } else {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "block";
+                elements[i].classList.remove('opacity-1');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.remove('display-block');
+                    }
+                }, 310); elements[0].dataset.condition = "0";
             }
         }
     }
     function hex4Click(e) {
         var elements = document.getElementsByClassName("filter-manegment");
-        if (elements[1].style.display == "block") {
+        if (elements[0].dataset.condition == "0") {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "none";
+                elements[i].classList.add('display-block');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.add('opacity-1');
+                    }
+                }, 20);
+                elements[0].dataset.condition = "1";
             }
         } else {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "block";
+                elements[i].classList.remove('opacity-1');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.remove('display-block');
+                    }
+                }, 310); elements[0].dataset.condition = "0";
             }
         }
     }
     function hex5Click(e) {
         var elements = document.getElementsByClassName("filter-marketing");
-        if (elements[1].style.display == "block") {
+        if (elements[0].dataset.condition == "0") {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "none";
+                elements[i].classList.add('display-block');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.add('opacity-1');
+                    }
+                }, 20);
+                elements[0].dataset.condition = "1";
             }
         } else {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "block";
+                elements[i].classList.remove('opacity-1');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.remove('display-block');
+                    }
+                }, 310); elements[0].dataset.condition = "0";
             }
         }
     }
     function hex6Click(e) {
         var elements = document.getElementsByClassName("filter-contGener");
-        if (elements[1].style.display == "block") {
+        if (elements[0].dataset.condition == "0") {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "none";
+                elements[i].classList.add('display-block');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.add('opacity-1');
+                    }
+                }, 20);
+                elements[0].dataset.condition = "1";
             }
         } else {
             for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = "block";
+                elements[i].classList.remove('opacity-1');
+                setTimeout(function () {
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].classList.remove('display-block');
+                    }
+                }, 310); elements[0].dataset.condition = "0";
             }
         }
     }

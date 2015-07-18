@@ -130,7 +130,8 @@ function start() {
 
         /*==============================================================  One driver + talking man ==================================================================*/
 
-
+        clearTimeout(deepdeepdeeptimeoutholde);
+        clearTimeout(deepdeeptimeoutholder);
         clearTimeout(deeptimeoutholder);
         clearTimeout(timeoutHolder);
 
