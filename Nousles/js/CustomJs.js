@@ -385,7 +385,7 @@ $(function () {
         range: "min",
         min: 0,
         max: 100,
-        value: 60,
+        value: 50,
         slide: function (event, ui) {
             $("#amount").val(ui.value);
         }

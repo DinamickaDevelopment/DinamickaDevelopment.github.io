@@ -3,12 +3,57 @@
 function start() {
     document.getElementById("preset1").addEventListener("click", preset1Activete, false); //Preset1
     document.getElementById("preset2").addEventListener("click", preset2Activete, false); //Preset2
-    document.getElementById("preset3").addEventListener("click", preset3Activete, false);
+    document.getElementById("preset3").addEventListener("click", preset3Activete, false); //Preset2
     var timeoutHolder, deeptimeoutholder, deepdeeptimeoutholder, deepdeepdeeptimeoutholde;
     var gift = document.getElementsByClassName("gift")[0];
 
+    function Miksher(left, right)
+    {
+        $("#slider-vertical-left").slider({ value: left });
+        $("#SliderLeft_value_text").html(left + "%<br>Reach");
+
+        $("#slider-vertical-right").slider({ value: right });
+        $("#SliderRight_value_text").html(right + "%<br>Reach")
+
+    }
+
 
     function preset1Activete() {
+
+        ////////////////////////////Add Style to this button///////////////////////////////
+
+        var button = $(this);
+
+        if (!button.hasClass("afterClick_btn-num")) {
+            button.addClass("afterClick_btn-num");
+        }
+       
+        $(".btn-num").each(function () {
+
+            if ($(this).text() != "1")
+            {
+
+                $(this).removeClass("afterClick_btn-num");
+            }
+        });
+
+
+        clearTimeout(timer);
+
+        var timer = setTimeout(function ()
+        {
+
+            Miksher(50, 50);
+
+            button.removeClass("afterClick_btn-num");
+        }, 19250);
+        
+        /////////////miksher/////////////////////////////////
+
+        Miksher(90, 10);
+
+        //////////////////////////////////////////////////////////////////////////////////
+
         var containerDots = document.getElementsByClassName("hum-line")[0];
         gift.removeAttribute("style"); gift.className = "gift";
         //remove old scene
@@ -53,6 +98,43 @@ function start() {
     }
 
     function preset2Activete() {
+
+
+        ////////////////////////////Add Style to this button///////////////////////////////
+
+        var button = $(this);
+
+        if (!button.hasClass("afterClick_btn-num")) {
+            button.addClass("afterClick_btn-num");
+        }
+
+        $(".btn-num").each(function () {
+
+            if ($(this).text() != "2") {
+
+                $(this).removeClass("afterClick_btn-num");
+            }
+        });
+
+
+
+        clearTimeout(timer);
+
+        var timer = setTimeout(function () {
+
+            Miksher(50, 50);
+
+            button.removeClass("afterClick_btn-num");
+        }, 49250);
+
+        /////////////miksher/////////////////////////////////
+
+         Miksher(90, 90);
+
+
+        //////////////////////////////////////////////////////////////////////////////////
+
+
         var containerDots = document.getElementsByClassName("hum-line")[0];
         gift.removeAttribute("style");
         //remove old scene
@@ -95,6 +177,39 @@ function start() {
     }
 
     function preset3Activete() {
+
+        ////////////////////////////Add Style to this button///////////////////////////////
+
+        var button = $(this);
+
+        if (!button.hasClass("afterClick_btn-num")) {
+            button.addClass("afterClick_btn-num");
+        }
+
+        $(".btn-num").each(function () {
+
+            if ($(this).text() != "3") {
+
+                $(this).removeClass("afterClick_btn-num");
+            }
+        });
+
+        clearTimeout(timer);
+
+        var timer = setTimeout(function () {
+
+            Miksher(50, 50);
+
+            button.removeClass("afterClick_btn-num");
+        }, 59214);
+
+        /////////////miksher/////////////////////////////////
+
+        Miksher(10, 90);
+
+        //////////////////////////////////////////////////////////////////////////////////
+
+
         var containerDots = document.getElementsByClassName("hum-line")[0];
         //remove old scene
         for (var i = (containerDots.childNodes.length - 1) ; i > -1; i--) {

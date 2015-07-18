@@ -669,6 +669,17 @@ div.figures img{
         -moz-box-shadow: 0 3px 9px 2px #000 inset;
         box-shadow: 0 3px 9px 2px #000 inset;
     }
+
+.afterClick_btn-num 
+{
+        background-color: #696a6a;
+        color: #000;
+        -webkit-box-shadow: 0 3px 9px 2px #000 inset;
+        -moz-box-shadow: 0 3px 9px 2px #000 inset;
+        box-shadow: 0 3px 9px 2px #000 inset;
+}
+
+    
 /*
     -----------------------------3. How-----------------------------
 */
