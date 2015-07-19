@@ -924,9 +924,9 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 .blur_ref-index_1 
 {
      background: -webkit-linear-gradient(left ,#9d6173, #4f2734);
-     background: -o-linear-linear-gradient(left ,#9d6173, #4f2734);
-     background: -ms-linear-linear-gradient(left ,#9d6173, #4f2734);
-     background: -moz-linear-linear-gradient(left ,#9d6173, #4f2734);
+     background: -o-linear-gradient(left ,#9d6173, #4f2734);
+     background: -ms-linear-gradient(left ,#9d6173, #4f2734);
+     background: -moz-linear-gradient(left ,#9d6173, #4f2734);
      /*background: linear-gradient(left ,#9d6173, #4f2734);*/  
 }
 
@@ -942,7 +942,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 .blur_ref-index_3 
 {
      background: -webkit-linear-gradient(left ,#1e1631, #8989b4);
-     background: -o-linear-linear-gradient(left ,#1e1631, #8989b4);
+     background: -o-linear-gradient(left ,#1e1631, #8989b4);
      background: -ms-linear-gradient(left ,#1e1631, #8989b4);
      background: -moz-linear-gradient(left ,#1e1631, #8989b4);
      /*background: linear-gradient(to left ,#1e1631, #8989b4);*/
