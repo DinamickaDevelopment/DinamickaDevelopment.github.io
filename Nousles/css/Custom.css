@@ -524,7 +524,10 @@ div.span+p{
   position: relative;
   width: 700px;
   height: 100px;
+  top: -55px;
   margin: 0 auto 35px;
+  left: -20px;
+  z-index: 100;
 }
 .hex-container{
     width:100%;
@@ -640,43 +643,24 @@ div.figures img{
   font-size: 27px;
   font-weight: bold;
 }
-.numbers{
-  position: absolute;
-  top: 97px;
-  left: 263px;
-  z-index: 10;
-}
-.btn-num {
-    float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #f3f3f3;
-    font-family: alef;
-    text-align: center;
-    font-size: 24px;
-    border: 1px transparent #000;
-    margin: 0 10px;
-    
-    -webkit-box-shadow: 0 0 4px 1px #000 inset;
-    -moz-box-shadow: 0 0 4px 1px #000 inset;
-    box-shadow: 0 0 4px 1px #000 inset;
-}
-    .btn-num:hover {
+.edgeLoad-EDGE-270615400 { visibility:hidden; }
+    #Stage__1:hover,#Stage__2:hover,#Stage__3:hover {
         background-color: #696a6a;
         color: #000;
-        -webkit-box-shadow: 0 3px 9px 2px #000 inset;
-        -moz-box-shadow: 0 3px 9px 2px #000 inset;
-        box-shadow: 0 3px 9px 2px #000 inset;
+          border-radius: 100%;
+        -webkit-box-shadow:  0 5px 14px 1px #000 inset;
+        -moz-box-shadow:  0 5px 14px 1px #000 inset;
+        box-shadow:  0 5px 14px 1px #000 inset;
     }
 
-.afterClick_btn-num 
+.afterClick_btn-num
 {
         background-color: #696a6a;
         color: #000;
-        -webkit-box-shadow: 0 3px 9px 2px #000 inset;
-        -moz-box-shadow: 0 3px 9px 2px #000 inset;
-        box-shadow: 0 3px 9px 2px #000 inset;
+        -webkit-box-shadow: 0 5px 14px 1px #000 inset;
+        -moz-box-shadow: 0 5px 14px 1px #000 inset;
+        box-shadow: 0 5px 14px 1px #000 inset;
+        border-radius: 100%;
 }
 
     

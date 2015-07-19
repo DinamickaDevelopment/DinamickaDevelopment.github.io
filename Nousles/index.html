@@ -16,17 +16,17 @@
     <link href="css/fontfaces.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/keyframes.css" rel="stylesheet" />
-    <link href="css/animateStyle.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    
+
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-    
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body data-type="background" data-speed="10" id="body-el">
     <div id="parallaxBackground" class="mouse-bg"></div>
@@ -155,14 +155,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mans">
-                            <div class="figures">
-                                <img src="img/man1.png" class="man1" />
-                                <img src="img/gift.png" class="gift" />
-                                <img src="img/basket.png" class="basket" />
+                            <div id="Stage" class="EDGE-270615400">
                             </div>
-                            <div class="hum-dot"><img src="img/hum-dot.png" /></div>
-                            <div class="hum-line-container"><div class="hum-line"></div></div>
-                            <div class="hum-dot"><img src="img/hum-dot.png" /></div>
                         </div>
                         <div class="miksher">
                             <div class="reach">
@@ -171,12 +165,6 @@
 
                                 </div>
                                 <span id="SliderLeft_value_text">50%<br>Reach</span>
-                            </div>
-                            <div class="numbers">
-                                <div id="preset1" class="btn-num">1</div>
-                                <div id="preset2" class="btn-num">2</div>
-                                <div id="preset3" class="btn-num">3</div>
-
                             </div>
                             <div class="Ep"><img src="img/wi-fi.png" /><span>Ep</span></div>
                             <div class="desirability">
@@ -738,14 +726,14 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-   <!--<script src="js/howManyScroll.js"></script>-->
+    <!--<script src="js/howManyScroll.js"></script>-->
     <script src="js/mouse.parallax.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/FormJS.js"></script>
     <script src="js/CustomJs.js"></script>
-    <script src="js/HumanAnimate.js"></script>
+    
     <script src="js/index.js"></script>
     <script>
         skrollr.init({
@@ -760,6 +748,8 @@
         });
     </script>
     <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
+
+
     <script>
         AdobeEdge.loadComposition('iNF', 'EDGE-255909414', {
             scaleToFit: "none",
@@ -770,6 +760,16 @@
             height: "250px"
         }, { "dom": {} }, { "dom": {} });
     </script>
-
+    <script>
+        AdobeEdge.loadComposition('Running', 'EDGE-270615400', {
+            scaleToFit: "none",
+            centerStage: "none",
+            minW: "0",
+            maxW: "undefined",
+            width: "750px",
+            height: "350px"
+        }, { "dom": {} }, { "dom": {} });
+    </script>
+    <script src="js/HumanAnimate.js"></script>
 </body>
 </html>
