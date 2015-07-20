@@ -33,7 +33,7 @@
 				    var percentXLogo = ((mouseX / windowWidth) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
 				    var percentYLogo = ((mouseY / windowHeight) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
 
-				    var leftStringLogo = (0 - percentXLogo - o.LogoMoveFactor + 54) + "%";
+				    var leftStringLogo = (0 - percentXLogo - o.LogoMoveFactor + 35) + "%";//we add 35% to get need position
 				    var rightStringLogo = (0 - percentYLogo - o.LogoMoveFactor) + "%";
 
 				    if (timeMouse)return;
