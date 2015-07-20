@@ -10,6 +10,7 @@
 			return this.each(function() {
 				var o = options;
 				var background = $(this);
+				var Logo = $(o.LogoSelector);
 				var timeMouse = null, timeScroll = null;
 				//if (o.zIndexValue) {
 				//        background[0].style.zIndex = o.zIndexValue;
@@ -22,22 +23,24 @@
 
 				    windowWidth = $(window).width();
 				    windowHeight = $(window).height();
-
+                    //Calculating background value
 				    percentX = ((mouseX / windowWidth) * o.moveFactor) - (o.moveFactor / 2);
 				    percentY = ((mouseY / windowHeight) * o.moveFactor) - (o.moveFactor / 2);
 
 				    leftString = (0 - percentX - o.moveFactor) + "%";
 				    rightString = (0 - percentX - o.moveFactor) + "%";
-				    //topString = (0-percentY-o.moveFactor)+"%";    uncomment this part will turn on vertical parallax
-				    //bottomString = (0-percentY-o.moveFactor)+"%";
+				    //Calculating Logo value
+				    var percentXLogo = ((mouseX / windowWidth) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
+				    var percentYLogo = ((mouseY / windowHeight) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
 
-
-				    //background[0].style.top = topString;
-				    //background[0].style.bottom = bottomString;
+				    var leftStringLogo = (0 - percentXLogo - o.LogoMoveFactor + 54) + "%";
+				    var rightStringLogo = (0 - percentYLogo - o.LogoMoveFactor) + "%";
 
 				    if (timeMouse)return;
 
 				    timeMouse = setTimeout(function () {
+				        Logo[0].style.left = leftStringLogo;
+				        Logo[0].style.right = rightStringLogo;
 				        background[0].style.left = leftString;
 				        background[0].style.right = rightString;
 				        timeMouse = null;

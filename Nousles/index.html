@@ -90,7 +90,7 @@
                     <div class="lil-grad"><img src="img/purp-grad.png" /></div>
                     <div class="prisma"><img src="img/prisma.png" /></div>
                     <div class="shadow"><img src="img/shadow.png" /></div>
-                    <div class="welc"><img src="img/Welcompic.png" /></div>
+                    <div id="LogoParallax" class="welc mouse-bg"><img src="img/Welcompic.png" /></div>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
                     <p>Brainstorm Is a Brand & Marketing development agency which is engaged in research and creation of desirability-generating algorithms. Our working process combines a deep comprehension of corporate brand behavior with an advanced arsenal of technological capabilities. We consist solely of highly specialized personnel with proven experience in order to guarantee the best results.</p>
                     <div class="RXD">
                         <div class="circle circle-top-1">
-                            <div class="RXD-info-corner opac" style="display:none">
+                            <div class="RXD-info-corner opac" style="opacity:0">
                                 <div class="RXD-info">
                                     <div class="RXD-info-head">R</div>
                                     <p>Lorem ipsum</p>
@@ -121,7 +121,7 @@
                         </div>
                         <p>R X D = Ep</p>
                         <div class="circle circle-top-2">
-                            <div class="RXD-info-corner opac" style="display:none">
+                            <div class="RXD-info-corner opac" style="opacity:0;">
                                 <div class="RXD-info">
                                     <div class="RXD-info-head">D</div>
                                     <p>Lorem ipsum</p>
@@ -131,7 +131,7 @@
                             <div class="plus">+</div>
                         </div>
                         <div class="circle circle-bot">
-                            <div class="RXD-info-corner opac" style="display:none">
+                            <div class="RXD-info-corner opac" style="opacity:0;">
                                 <div class="RXD-info">
                                     <div class="RXD-info-head">Ep</div>
                                     <p>Lorem ipsum</p>
@@ -744,7 +744,7 @@
 
         $(document).ready(function () {
 
-            $('#parallaxBackground').mouseParallax({ moveFactor: 5, verticalFactor: 10 });
+            $('#parallaxBackground').mouseParallax({ moveFactor: 5, verticalFactor: 10, LogoSelector: "#LogoParallax", LogoMoveFactor:3 });
         });
     </script>
     <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>

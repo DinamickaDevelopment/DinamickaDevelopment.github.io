@@ -472,9 +472,11 @@ div.span+p{
   top: 28px;
   left: -80px;
   z-index: 1;
-  display:none;
 
-
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
   }
   .RXD-info-head{  font-family: Alef;
   font-weight: bold;
@@ -487,13 +489,13 @@ div.span+p{
   background-color: #52b2cf;
   line-height: 55px;}
 
-.circle{
-    position:absolute;
-    width:25px;
-    height:25px;
-    border-radius:100%;
-    padding:2px;
-    border:1px solid #fff;
+.circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 2px;
+    border: 1px solid #fff;
 }
 
 .circle-top-1{
@@ -921,6 +923,11 @@ span.ui-slider-handle {
     -webkit-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
     -moz-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
     box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+
+    -moz-transition: bottom 1s;
+    -o-transition: bottom 1s;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
 }
 
         .ui-widget-content {
@@ -961,17 +968,18 @@ span.ui-slider-handle {
             outline: none !important;
         }
 
-        #slider-vertical-left.ui-widget-content div.ui-slider-range {
+#slider-vertical-left.ui-widget-content div.ui-slider-range {
+    background: linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
+    background: -moz-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
+    background: -o-liner-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
+    background: -ms-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
+    background: -webkit-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
 
-            background: linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
-            background: -moz-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
-            background: -o-liner-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
-            background: -ms-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
-            background: -webkit-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
-
-
-            
-        }
+    -moz-transition: height 1s;
+    -o-transition: height 1s;
+    -webkit-transition: height 1s;
+    transition: height 1s;
+}
 
         #slider-vertical-right.ui-widget-content div.ui-slider-range {
 
@@ -980,6 +988,11 @@ span.ui-slider-handle {
             background: -o-linear-gradient(left, #572526 0, #f35051 50%, #572526 100%) 50% 50% repeat-x !important;
             background: -ms-linear-gradient(left, #572526 0, #f35051 50%, #572526 100%) 50% 50% repeat-x !important;
             background: -webkit-linear-gradient(left, #572526 0, #f35051 50%, #572526 100%) 50% 50% repeat-x !important;
+
+            -moz-transition: height 1s;
+            -o-transition: height 1s;
+            -webkit-transition: height 1s;
+            transition: height 1s;
         }
 /*
     -----------------------------4.Service-----------------------------

@@ -44,13 +44,19 @@ $(document).scroll(
 
 $(".circle").click(function (event) {
 
-
-
-    $(this.firstElementChild).toggle();
+    
 
     for (var i = 0; i < document.getElementsByClassName("RXD-info-corner").length; i++) {
+        if (document.getElementsByClassName("RXD-info-corner")[i] == this.firstElementChild) {
+            if (document.getElementsByClassName("RXD-info-corner")[i].style.opacity == "0") {
+                document.getElementsByClassName("RXD-info-corner")[i].style.opacity = "1";
+            } else {
+                document.getElementsByClassName("RXD-info-corner")[i].style.opacity = "0";
+            }
+            
+        }
         if (document.getElementsByClassName("RXD-info-corner")[i] !== this.firstElementChild) {
-            document.getElementsByClassName("RXD-info-corner")[i].style.display = "none";
+            document.getElementsByClassName("RXD-info-corner")[i].style.opacity = "0";
         }
     };
     //$(".opac").each(function () {
