@@ -12,7 +12,7 @@ function start() {
         $("#SliderLeft_value_text").html(left + "%<br>Reach");
 
         $("#slider-vertical-right").slider({ value: right });
-        $("#SliderRight_value_text").html(right + "%<br>Reach")
+        $("#SliderRight_value_text").html(right + "%<br>Desirability")
 
     }
 

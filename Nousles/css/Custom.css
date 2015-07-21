@@ -204,6 +204,7 @@ li a.scrolling:active:after{
     left:345px;
     z-index:3;
     top: 580px;
+    max-width: 622px;
     opacity:0;
     -moz-animation:slidePrism 1s ease-out 1s forwards;
     -o-animation:slidePrism 1s ease-out 1s forwards;
