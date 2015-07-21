@@ -68,7 +68,7 @@ function start() {
             Miksher(50, 50);
 
             button.removeClass("afterClick_btn-num");
-        }, 49250);
+        }, 33250);
 
         /////////////miksher/////////////////////////////////
 
@@ -96,7 +96,7 @@ function start() {
                     Miksher(50, 50);
 
                     button.removeClass("afterClick_btn-num");
-                }, 59214);
+                }, 39010);
 
                 /////////////miksher/////////////////////////////////
 
