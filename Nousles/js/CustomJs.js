@@ -105,7 +105,7 @@ function start() {
         closeIcon.className = "closeIcon";
 
         if (elem.className !== "closeIcon") {
-            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content" && elem.className !== "circle-head" && elem.className !== "Allcircle") {
+            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content" && elem.className !== "circle-head" && elem.className !== "Allcircle addOpacity1") {
                 if (elem.querySelector("#active-circle .closeIcon") == null) {
                     elem.id = "active-circle";
                     
