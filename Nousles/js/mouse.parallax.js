@@ -36,14 +36,11 @@
 
 				    var leftStringLogo = (0 - percentXLogo - o.LogoMoveFactor + 35) + "%";//we add 35% to get need position
 				    var rightStringLogo = (0 - percentYLogo - o.LogoMoveFactor) + "%";
-		    //Calculating Logo value
-				    var percentXWelc = ((mouseX / windowWidth) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
-				    var percentYWelc = ((mouseY / windowHeight) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
 
-				    var leftStringWelc = (0 - percentXWelc - o.LogoMoveFactor + 60) + "%";//we add 35% to get need position
-				    var rightStringWelc = (0 - percentYWelc - o.LogoMoveFactor) + "%";
 
-				    if (timeMouse)return;
+				   var leftStringWelc = (0 - percentXLogo - o.LogoMoveFactor + 60) + "%"
+
+				    if (timeMouse) return;
 
 				    timeMouse = setTimeout(function () {
 				        Logo[0].style.left = leftStringLogo;
@@ -51,7 +48,7 @@
 				        background[0].style.left = leftString;
 				        background[0].style.right = rightString;
 				        Welc[0].style.left = leftStringWelc;
-				        Welc[0].style.right = rightStringWelc;
+				        Welc[0].style.right = rightStringLogo;
 				        timeMouse = null;
 				    }, 100);
 				    
