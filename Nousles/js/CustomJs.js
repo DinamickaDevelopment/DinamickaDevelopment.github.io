@@ -110,10 +110,19 @@ function start() {
                     elem.id = "active-circle";
                     
                     setTimeout(function () {
-                        elem.innerHTML = "<div class='Allcircle'> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span> </div>"
+                        elem.innerHTML = "<div class='Allcircle'> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Added to <br/>contact form<br/>✔</span> </div>"
+
                         elem.appendChild(closeIcon);
+                        
+                    }, 1100);
+
+                    setTimeout(function () {
+
+                        var bigCircleText = elem.firstChild;
+                        bigCircleText.classList.add("addOpacity1");
                         elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
-                    }, 1100)
+
+                    }, 1200);
                     
                 } 
 

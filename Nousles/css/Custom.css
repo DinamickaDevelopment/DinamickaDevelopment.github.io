@@ -1087,10 +1087,26 @@ div.service-log h2{
     -webkit-transition: opacity 2s linear;
     transition: opacity 2s linear;*/
 }
+
+.Allcircle 
+{
+    opacity:0;
+}
+
+.addOpacity1 
+{
+    opacity:1 ;
+    -moz-transition: opacity 2s linear;
+    -o-transition: opacity 2s linear;
+    -webkit-transition: opacity 2s linear;
+    transition: opacity 2s linear;
+}
+
 .display-none{display:none}
 .display-block{display:block}
 .opacity-0{opacity:0}
 .opacity-1{opacity:1}
+
 
 
 
@@ -1196,10 +1212,10 @@ div.service-log h2{
     
     z-index: 3;
     
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+    -webkit-transition: opacity 2s linear;
+    -moz-transition: opacity 2s linear;
+    -o-transition: opacity 2s linear;
+    transition: opacity 2s linear;
 }
  .closeIcon:before{
      content:"\f00d"
