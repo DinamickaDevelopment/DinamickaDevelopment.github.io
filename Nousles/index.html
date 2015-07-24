@@ -90,7 +90,7 @@
                     <div class="lil-grad"><img src="img/purp-grad.png" /></div>
                     <div id="LogoParallax" class="prisma mouse-bg"><img src="img/prisma.png" /></div>
                     <div class="shadow"><img src="img/shadow.png" /></div>
-                    <div  class="welc"><img src="img/Welcompic.png" /></div>
+                    <div id="WelcParallax" class="welc mouse-bg"><img src="img/Welcompic.png" /></div>
                 </div>
             </div>
         </div>
@@ -744,7 +744,11 @@
 
         $(document).ready(function () {
 
-            $('#parallaxBackground').mouseParallax({ moveFactor: 5, verticalFactor: 10, LogoSelector: "#LogoParallax", LogoMoveFactor:3 });
+            $('#parallaxBackground').mouseParallax({
+                moveFactor: 5, verticalFactor: 10, LogoSelector: "#LogoParallax", LogoMoveFactor: 3,
+                WelcSelector: "#WelcParallax"
+
+            });
         });
     </script>
     <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>

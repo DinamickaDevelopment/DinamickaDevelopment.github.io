@@ -11,6 +11,7 @@
 				var o = options;
 				var background = $(this);
 				var Logo = $(o.LogoSelector);
+				var Welc = $(o.WelcSelector);
 				var timeMouse = null, timeScroll = null;
 				//if (o.zIndexValue) {
 				//        background[0].style.zIndex = o.zIndexValue;
@@ -35,6 +36,12 @@
 
 				    var leftStringLogo = (0 - percentXLogo - o.LogoMoveFactor + 35) + "%";//we add 35% to get need position
 				    var rightStringLogo = (0 - percentYLogo - o.LogoMoveFactor) + "%";
+		    //Calculating Logo value
+				    var percentXWelc = ((mouseX / windowWidth) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
+				    var percentYWelc = ((mouseY / windowHeight) * o.LogoMoveFactor) - (o.LogoMoveFactor / 2);
+
+				    var leftStringWelc = (0 - percentXWelc - o.LogoMoveFactor + 60) + "%";//we add 35% to get need position
+				    var rightStringWelc = (0 - percentYWelc - o.LogoMoveFactor) + "%";
 
 				    if (timeMouse)return;
 
@@ -43,6 +50,8 @@
 				        Logo[0].style.right = rightStringLogo;
 				        background[0].style.left = leftString;
 				        background[0].style.right = rightString;
+				        Welc[0].style.left = leftStringWelc;
+				        Welc[0].style.right = rightStringWelc;
 				        timeMouse = null;
 				    }, 100);
 				    
