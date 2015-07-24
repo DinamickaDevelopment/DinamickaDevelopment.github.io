@@ -110,7 +110,7 @@ function start() {
                     elem.id = "active-circle";
                     
                     setTimeout(function () {
-                        elem.innerHTML = "<div class='Allcircle'> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Added to <br/>contact form<br/>✔</span> </div>"
+                        elem.innerHTML = "<div class='Allcircle'> <span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span> </div>"
 
                         elem.appendChild(closeIcon);
                         
@@ -129,6 +129,8 @@ function start() {
              
             } else {
                 if(elem.className == "add"){
+
+                    elem.innerHTML = "Added to <br/>contact form<br/>✔";
 
                     var selectedId = elem.parentElement.parentElement.dataset.id;
                     var ServiceElement = document.getElementById(selectedId);
