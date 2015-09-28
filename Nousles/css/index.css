@@ -1,6 +1,7 @@
 body{
 	margin:0px;
 	/*background:#FFF;*/
+	overflow-x: hidden;
 }
 
 .col-lg-12 
